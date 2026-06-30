@@ -753,15 +753,15 @@ impl From<Osel> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Stoprc {
+pub enum Stoposc {
     #[doc = "Enable the LFRC Oscillator to drive the RTC value."]
     En = 0x0,
     #[doc = "Stop the LFRC Oscillator when driving the RTC value."]
     Stop = 0x01,
 }
-impl Stoprc {
+impl Stoposc {
     #[inline(always)]
-    pub const fn from_bits(val: u8) -> Stoprc {
+    pub const fn from_bits(val: u8) -> Stoposc {
         unsafe { core::mem::transmute(val & 0x01) }
     }
     #[inline(always)]
@@ -769,47 +769,16 @@ impl Stoprc {
         unsafe { core::mem::transmute(self) }
     }
 }
-impl From<u8> for Stoprc {
+impl From<u8> for Stoposc {
     #[inline(always)]
-    fn from(val: u8) -> Stoprc {
-        Stoprc::from_bits(val)
+    fn from(val: u8) -> Stoposc {
+        Stoposc::from_bits(val)
     }
 }
-impl From<Stoprc> for u8 {
+impl From<Stoposc> for u8 {
     #[inline(always)]
-    fn from(val: Stoprc) -> u8 {
-        Stoprc::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Stopxt {
-    #[doc = "Enable the XT Oscillator to drive the RTC value."]
-    En = 0x0,
-    #[doc = "Stop the XT Oscillator when driving the RTC value."]
-    Stop = 0x01,
-}
-impl Stopxt {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Stopxt {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Stopxt {
-    #[inline(always)]
-    fn from(val: u8) -> Stopxt {
-        Stopxt::from_bits(val)
-    }
-}
-impl From<Stopxt> for u8 {
-    #[inline(always)]
-    fn from(val: Stopxt) -> u8 {
-        Stopxt::to_bits(val)
+    fn from(val: Stoposc) -> u8 {
+        Stoposc::to_bits(val)
     }
 }
 #[repr(u8)]

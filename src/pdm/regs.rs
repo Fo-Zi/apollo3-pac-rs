@@ -18,13 +18,13 @@ impl Dmacfg {
     #[doc = "Direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn dmadir(&self) -> super::vals::Dmadir {
+    pub const fn dmadir(&self) -> super::super::shared::Dmadir {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Dmadir::from_bits(val as u8)
+        super::super::shared::Dmadir::from_bits(val as u8)
     }
     #[doc = "Direction."]
     #[inline(always)]
-    pub const fn set_dmadir(&mut self, val: super::vals::Dmadir) {
+    pub const fn set_dmadir(&mut self, val: super::super::shared::Dmadir) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Sets the Priority of the DMA request."]
@@ -880,25 +880,25 @@ impl Pcfg {
     #[doc = "Left channel PGA gain."]
     #[must_use]
     #[inline(always)]
-    pub const fn pgaleft(&self) -> super::vals::Pgaleft {
+    pub const fn pgaleft(&self) -> super::vals::Pgagain {
         let val = (self.0 >> 21usize) & 0x1f;
-        super::vals::Pgaleft::from_bits(val as u8)
+        super::vals::Pgagain::from_bits(val as u8)
     }
     #[doc = "Left channel PGA gain."]
     #[inline(always)]
-    pub const fn set_pgaleft(&mut self, val: super::vals::Pgaleft) {
+    pub const fn set_pgaleft(&mut self, val: super::vals::Pgagain) {
         self.0 = (self.0 & !(0x1f << 21usize)) | (((val.to_bits() as u32) & 0x1f) << 21usize);
     }
     #[doc = "Right channel PGA gain."]
     #[must_use]
     #[inline(always)]
-    pub const fn pgaright(&self) -> super::vals::Pgaright {
+    pub const fn pgaright(&self) -> super::vals::Pgagain {
         let val = (self.0 >> 26usize) & 0x1f;
-        super::vals::Pgaright::from_bits(val as u8)
+        super::vals::Pgagain::from_bits(val as u8)
     }
     #[doc = "Right channel PGA gain."]
     #[inline(always)]
-    pub const fn set_pgaright(&mut self, val: super::vals::Pgaright) {
+    pub const fn set_pgaright(&mut self, val: super::vals::Pgagain) {
         self.0 = (self.0 & !(0x1f << 26usize)) | (((val.to_bits() as u32) & 0x1f) << 26usize);
     }
     #[doc = "Left/right channel swap."]

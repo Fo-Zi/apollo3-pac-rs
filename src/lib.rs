@@ -150,6 +150,7 @@ pub mod rstgen;
 pub mod rtc;
 pub mod scard;
 pub mod security;
+pub mod shared;
 pub mod uart0;
 pub mod vcomp;
 pub mod wdt;

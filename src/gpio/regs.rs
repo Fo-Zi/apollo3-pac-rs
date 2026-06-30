@@ -1655,289 +1655,289 @@ impl Cfga {
     #[doc = "GPIO0 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio0incfg(&self) -> super::vals::Gpio0incfg {
+    pub const fn gpio0incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio0incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO0 input enable."]
     #[inline(always)]
-    pub const fn set_gpio0incfg(&mut self, val: super::vals::Gpio0incfg) {
+    pub const fn set_gpio0incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO0 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio0outcfg(&self) -> super::vals::Gpio0outcfg {
+    pub const fn gpio0outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio0outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO0 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio0outcfg(&mut self, val: super::vals::Gpio0outcfg) {
+    pub const fn set_gpio0outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO0 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio0intd(&self) -> super::vals::Gpio0intd {
+    pub const fn gpio0intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio0intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO0 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio0intd(&mut self, val: super::vals::Gpio0intd) {
+    pub const fn set_gpio0intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO1 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio1incfg(&self) -> super::vals::Gpio1incfg {
+    pub const fn gpio1incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio1incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO1 input enable."]
     #[inline(always)]
-    pub const fn set_gpio1incfg(&mut self, val: super::vals::Gpio1incfg) {
+    pub const fn set_gpio1incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO1 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio1outcfg(&self) -> super::vals::Gpio1outcfg {
+    pub const fn gpio1outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio1outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO1 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio1outcfg(&mut self, val: super::vals::Gpio1outcfg) {
+    pub const fn set_gpio1outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO1 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio1intd(&self) -> super::vals::Gpio1intd {
+    pub const fn gpio1intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio1intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO1 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio1intd(&mut self, val: super::vals::Gpio1intd) {
+    pub const fn set_gpio1intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO2 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio2incfg(&self) -> super::vals::Gpio2incfg {
+    pub const fn gpio2incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio2incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO2 input enable."]
     #[inline(always)]
-    pub const fn set_gpio2incfg(&mut self, val: super::vals::Gpio2incfg) {
+    pub const fn set_gpio2incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO2 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio2outcfg(&self) -> super::vals::Gpio2outcfg {
+    pub const fn gpio2outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio2outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO2 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio2outcfg(&mut self, val: super::vals::Gpio2outcfg) {
+    pub const fn set_gpio2outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO2 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio2intd(&self) -> super::vals::Gpio2intd {
+    pub const fn gpio2intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio2intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO2 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio2intd(&mut self, val: super::vals::Gpio2intd) {
+    pub const fn set_gpio2intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO3 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio3incfg(&self) -> super::vals::Gpio3incfg {
+    pub const fn gpio3incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio3incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO3 input enable."]
     #[inline(always)]
-    pub const fn set_gpio3incfg(&mut self, val: super::vals::Gpio3incfg) {
+    pub const fn set_gpio3incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO3 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio3outcfg(&self) -> super::vals::Gpio3outcfg {
+    pub const fn gpio3outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio3outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO3 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio3outcfg(&mut self, val: super::vals::Gpio3outcfg) {
+    pub const fn set_gpio3outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO3 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio3intd(&self) -> super::vals::Gpio3intd {
+    pub const fn gpio3intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio3intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO3 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio3intd(&mut self, val: super::vals::Gpio3intd) {
+    pub const fn set_gpio3intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO4 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio4incfg(&self) -> super::vals::Gpio4incfg {
+    pub const fn gpio4incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio4incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO4 input enable."]
     #[inline(always)]
-    pub const fn set_gpio4incfg(&mut self, val: super::vals::Gpio4incfg) {
+    pub const fn set_gpio4incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO4 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio4outcfg(&self) -> super::vals::Gpio4outcfg {
+    pub const fn gpio4outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio4outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO4 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio4outcfg(&mut self, val: super::vals::Gpio4outcfg) {
+    pub const fn set_gpio4outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO4 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio4intd(&self) -> super::vals::Gpio4intd {
+    pub const fn gpio4intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio4intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO4 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio4intd(&mut self, val: super::vals::Gpio4intd) {
+    pub const fn set_gpio4intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO5 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio5incfg(&self) -> super::vals::Gpio5incfg {
+    pub const fn gpio5incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio5incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO5 input enable."]
     #[inline(always)]
-    pub const fn set_gpio5incfg(&mut self, val: super::vals::Gpio5incfg) {
+    pub const fn set_gpio5incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO5 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio5outcfg(&self) -> super::vals::Gpio5outcfg {
+    pub const fn gpio5outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio5outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO5 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio5outcfg(&mut self, val: super::vals::Gpio5outcfg) {
+    pub const fn set_gpio5outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO5 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio5intd(&self) -> super::vals::Gpio5intd {
+    pub const fn gpio5intd(&self) -> super::vals::GpiointdIntmode {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio5intd::from_bits(val as u8)
+        super::vals::GpiointdIntmode::from_bits(val as u8)
     }
     #[doc = "GPIO5 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio5intd(&mut self, val: super::vals::Gpio5intd) {
+    pub const fn set_gpio5intd(&mut self, val: super::vals::GpiointdIntmode) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO6 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio6incfg(&self) -> super::vals::Gpio6incfg {
+    pub const fn gpio6incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio6incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO6 input enable."]
     #[inline(always)]
-    pub const fn set_gpio6incfg(&mut self, val: super::vals::Gpio6incfg) {
+    pub const fn set_gpio6incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO6 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio6outcfg(&self) -> super::vals::Gpio6outcfg {
+    pub const fn gpio6outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio6outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO6 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio6outcfg(&mut self, val: super::vals::Gpio6outcfg) {
+    pub const fn set_gpio6outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO6 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio6intd(&self) -> super::vals::Gpio6intd {
+    pub const fn gpio6intd(&self) -> super::vals::GpiointdIntmode {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio6intd::from_bits(val as u8)
+        super::vals::GpiointdIntmode::from_bits(val as u8)
     }
     #[doc = "GPIO6 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio6intd(&mut self, val: super::vals::Gpio6intd) {
+    pub const fn set_gpio6intd(&mut self, val: super::vals::GpiointdIntmode) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO7 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio7incfg(&self) -> super::vals::Gpio7incfg {
+    pub const fn gpio7incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio7incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO7 input enable."]
     #[inline(always)]
-    pub const fn set_gpio7incfg(&mut self, val: super::vals::Gpio7incfg) {
+    pub const fn set_gpio7incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO7 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio7outcfg(&self) -> super::vals::Gpio7outcfg {
+    pub const fn gpio7outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio7outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO7 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio7outcfg(&mut self, val: super::vals::Gpio7outcfg) {
+    pub const fn set_gpio7outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO7 interrupt direction, nCE polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio7intd(&self) -> super::vals::Gpio7intd {
+    pub const fn gpio7intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio7intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO7 interrupt direction, nCE polarity."]
     #[inline(always)]
-    pub const fn set_gpio7intd(&mut self, val: super::vals::Gpio7intd) {
+    pub const fn set_gpio7intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -1991,289 +1991,289 @@ impl Cfgb {
     #[doc = "GPIO8 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio8incfg(&self) -> super::vals::Gpio8incfg {
+    pub const fn gpio8incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio8incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO8 input enable."]
     #[inline(always)]
-    pub const fn set_gpio8incfg(&mut self, val: super::vals::Gpio8incfg) {
+    pub const fn set_gpio8incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO8 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio8outcfg(&self) -> super::vals::Gpio8outcfg {
+    pub const fn gpio8outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio8outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO8 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio8outcfg(&mut self, val: super::vals::Gpio8outcfg) {
+    pub const fn set_gpio8outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO8 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio8intd(&self) -> super::vals::Gpio8intd {
+    pub const fn gpio8intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio8intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO8 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio8intd(&mut self, val: super::vals::Gpio8intd) {
+    pub const fn set_gpio8intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO9 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio9incfg(&self) -> super::vals::Gpio9incfg {
+    pub const fn gpio9incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio9incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO9 input enable."]
     #[inline(always)]
-    pub const fn set_gpio9incfg(&mut self, val: super::vals::Gpio9incfg) {
+    pub const fn set_gpio9incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO9 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio9outcfg(&self) -> super::vals::Gpio9outcfg {
+    pub const fn gpio9outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio9outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO9 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio9outcfg(&mut self, val: super::vals::Gpio9outcfg) {
+    pub const fn set_gpio9outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO9 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio9intd(&self) -> super::vals::Gpio9intd {
+    pub const fn gpio9intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio9intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO9 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio9intd(&mut self, val: super::vals::Gpio9intd) {
+    pub const fn set_gpio9intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO10 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio10incfg(&self) -> super::vals::Gpio10incfg {
+    pub const fn gpio10incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio10incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO10 input enable."]
     #[inline(always)]
-    pub const fn set_gpio10incfg(&mut self, val: super::vals::Gpio10incfg) {
+    pub const fn set_gpio10incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO10 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio10outcfg(&self) -> super::vals::Gpio10outcfg {
+    pub const fn gpio10outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio10outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO10 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio10outcfg(&mut self, val: super::vals::Gpio10outcfg) {
+    pub const fn set_gpio10outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO10 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio10intd(&self) -> super::vals::Gpio10intd {
+    pub const fn gpio10intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio10intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO10 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio10intd(&mut self, val: super::vals::Gpio10intd) {
+    pub const fn set_gpio10intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO11 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio11incfg(&self) -> super::vals::Gpio11incfg {
+    pub const fn gpio11incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio11incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO11 input enable."]
     #[inline(always)]
-    pub const fn set_gpio11incfg(&mut self, val: super::vals::Gpio11incfg) {
+    pub const fn set_gpio11incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO11 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio11outcfg(&self) -> super::vals::Gpio11outcfg {
+    pub const fn gpio11outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio11outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO11 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio11outcfg(&mut self, val: super::vals::Gpio11outcfg) {
+    pub const fn set_gpio11outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO11 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio11intd(&self) -> super::vals::Gpio11intd {
+    pub const fn gpio11intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio11intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO11 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio11intd(&mut self, val: super::vals::Gpio11intd) {
+    pub const fn set_gpio11intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO12 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio12incfg(&self) -> super::vals::Gpio12incfg {
+    pub const fn gpio12incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio12incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO12 input enable."]
     #[inline(always)]
-    pub const fn set_gpio12incfg(&mut self, val: super::vals::Gpio12incfg) {
+    pub const fn set_gpio12incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO12 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio12outcfg(&self) -> super::vals::Gpio12outcfg {
+    pub const fn gpio12outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio12outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO12 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio12outcfg(&mut self, val: super::vals::Gpio12outcfg) {
+    pub const fn set_gpio12outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO12 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio12intd(&self) -> super::vals::Gpio12intd {
+    pub const fn gpio12intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio12intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO12 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio12intd(&mut self, val: super::vals::Gpio12intd) {
+    pub const fn set_gpio12intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO13 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio13incfg(&self) -> super::vals::Gpio13incfg {
+    pub const fn gpio13incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio13incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO13 input enable."]
     #[inline(always)]
-    pub const fn set_gpio13incfg(&mut self, val: super::vals::Gpio13incfg) {
+    pub const fn set_gpio13incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO13 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio13outcfg(&self) -> super::vals::Gpio13outcfg {
+    pub const fn gpio13outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio13outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO13 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio13outcfg(&mut self, val: super::vals::Gpio13outcfg) {
+    pub const fn set_gpio13outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO13 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio13intd(&self) -> super::vals::Gpio13intd {
+    pub const fn gpio13intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio13intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO13 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio13intd(&mut self, val: super::vals::Gpio13intd) {
+    pub const fn set_gpio13intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO14 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio14incfg(&self) -> super::vals::Gpio14incfg {
+    pub const fn gpio14incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio14incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO14 input enable."]
     #[inline(always)]
-    pub const fn set_gpio14incfg(&mut self, val: super::vals::Gpio14incfg) {
+    pub const fn set_gpio14incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO14 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio14outcfg(&self) -> super::vals::Gpio14outcfg {
+    pub const fn gpio14outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio14outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO14 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio14outcfg(&mut self, val: super::vals::Gpio14outcfg) {
+    pub const fn set_gpio14outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO14 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio14intd(&self) -> super::vals::Gpio14intd {
+    pub const fn gpio14intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio14intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO14 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio14intd(&mut self, val: super::vals::Gpio14intd) {
+    pub const fn set_gpio14intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO15 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio15incfg(&self) -> super::vals::Gpio15incfg {
+    pub const fn gpio15incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio15incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO15 input enable."]
     #[inline(always)]
-    pub const fn set_gpio15incfg(&mut self, val: super::vals::Gpio15incfg) {
+    pub const fn set_gpio15incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO15 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio15outcfg(&self) -> super::vals::Gpio15outcfg {
+    pub const fn gpio15outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio15outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO15 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio15outcfg(&mut self, val: super::vals::Gpio15outcfg) {
+    pub const fn set_gpio15outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO15 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio15intd(&self) -> super::vals::Gpio15intd {
+    pub const fn gpio15intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio15intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO15 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio15intd(&mut self, val: super::vals::Gpio15intd) {
+    pub const fn set_gpio15intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -2327,289 +2327,289 @@ impl Cfgc {
     #[doc = "GPIO16 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio16incfg(&self) -> super::vals::Gpio16incfg {
+    pub const fn gpio16incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio16incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO16 input enable."]
     #[inline(always)]
-    pub const fn set_gpio16incfg(&mut self, val: super::vals::Gpio16incfg) {
+    pub const fn set_gpio16incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO16 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio16outcfg(&self) -> super::vals::Gpio16outcfg {
+    pub const fn gpio16outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio16outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO16 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio16outcfg(&mut self, val: super::vals::Gpio16outcfg) {
+    pub const fn set_gpio16outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO16 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio16intd(&self) -> super::vals::Gpio16intd {
+    pub const fn gpio16intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio16intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO16 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio16intd(&mut self, val: super::vals::Gpio16intd) {
+    pub const fn set_gpio16intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO17 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio17incfg(&self) -> super::vals::Gpio17incfg {
+    pub const fn gpio17incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio17incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO17 input enable."]
     #[inline(always)]
-    pub const fn set_gpio17incfg(&mut self, val: super::vals::Gpio17incfg) {
+    pub const fn set_gpio17incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO17 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio17outcfg(&self) -> super::vals::Gpio17outcfg {
+    pub const fn gpio17outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio17outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO17 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio17outcfg(&mut self, val: super::vals::Gpio17outcfg) {
+    pub const fn set_gpio17outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO17 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio17intd(&self) -> super::vals::Gpio17intd {
+    pub const fn gpio17intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio17intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO17 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio17intd(&mut self, val: super::vals::Gpio17intd) {
+    pub const fn set_gpio17intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO18 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio18incfg(&self) -> super::vals::Gpio18incfg {
+    pub const fn gpio18incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio18incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO18 input enable."]
     #[inline(always)]
-    pub const fn set_gpio18incfg(&mut self, val: super::vals::Gpio18incfg) {
+    pub const fn set_gpio18incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO18 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio18outcfg(&self) -> super::vals::Gpio18outcfg {
+    pub const fn gpio18outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio18outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO18 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio18outcfg(&mut self, val: super::vals::Gpio18outcfg) {
+    pub const fn set_gpio18outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO18 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio18intd(&self) -> super::vals::Gpio18intd {
+    pub const fn gpio18intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio18intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO18 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio18intd(&mut self, val: super::vals::Gpio18intd) {
+    pub const fn set_gpio18intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO19 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio19incfg(&self) -> super::vals::Gpio19incfg {
+    pub const fn gpio19incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio19incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO19 input enable."]
     #[inline(always)]
-    pub const fn set_gpio19incfg(&mut self, val: super::vals::Gpio19incfg) {
+    pub const fn set_gpio19incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO19 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio19outcfg(&self) -> super::vals::Gpio19outcfg {
+    pub const fn gpio19outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio19outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO19 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio19outcfg(&mut self, val: super::vals::Gpio19outcfg) {
+    pub const fn set_gpio19outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO19 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio19intd(&self) -> super::vals::Gpio19intd {
+    pub const fn gpio19intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio19intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO19 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio19intd(&mut self, val: super::vals::Gpio19intd) {
+    pub const fn set_gpio19intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO20 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio20incfg(&self) -> super::vals::Gpio20incfg {
+    pub const fn gpio20incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio20incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO20 input enable."]
     #[inline(always)]
-    pub const fn set_gpio20incfg(&mut self, val: super::vals::Gpio20incfg) {
+    pub const fn set_gpio20incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO20 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio20outcfg(&self) -> super::vals::Gpio20outcfg {
+    pub const fn gpio20outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio20outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO20 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio20outcfg(&mut self, val: super::vals::Gpio20outcfg) {
+    pub const fn set_gpio20outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO20 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio20intd(&self) -> super::vals::Gpio20intd {
+    pub const fn gpio20intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio20intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO20 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio20intd(&mut self, val: super::vals::Gpio20intd) {
+    pub const fn set_gpio20intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO21 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio21incfg(&self) -> super::vals::Gpio21incfg {
+    pub const fn gpio21incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio21incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO21 input enable."]
     #[inline(always)]
-    pub const fn set_gpio21incfg(&mut self, val: super::vals::Gpio21incfg) {
+    pub const fn set_gpio21incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO21 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio21outcfg(&self) -> super::vals::Gpio21outcfg {
+    pub const fn gpio21outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio21outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO21 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio21outcfg(&mut self, val: super::vals::Gpio21outcfg) {
+    pub const fn set_gpio21outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO21 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio21intd(&self) -> super::vals::Gpio21intd {
+    pub const fn gpio21intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio21intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO21 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio21intd(&mut self, val: super::vals::Gpio21intd) {
+    pub const fn set_gpio21intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO22 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio22incfg(&self) -> super::vals::Gpio22incfg {
+    pub const fn gpio22incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio22incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO22 input enable."]
     #[inline(always)]
-    pub const fn set_gpio22incfg(&mut self, val: super::vals::Gpio22incfg) {
+    pub const fn set_gpio22incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO22 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio22outcfg(&self) -> super::vals::Gpio22outcfg {
+    pub const fn gpio22outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio22outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO22 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio22outcfg(&mut self, val: super::vals::Gpio22outcfg) {
+    pub const fn set_gpio22outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO22 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio22intd(&self) -> super::vals::Gpio22intd {
+    pub const fn gpio22intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio22intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO22 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio22intd(&mut self, val: super::vals::Gpio22intd) {
+    pub const fn set_gpio22intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO23 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio23incfg(&self) -> super::vals::Gpio23incfg {
+    pub const fn gpio23incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio23incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO23 input enable."]
     #[inline(always)]
-    pub const fn set_gpio23incfg(&mut self, val: super::vals::Gpio23incfg) {
+    pub const fn set_gpio23incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO23 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio23outcfg(&self) -> super::vals::Gpio23outcfg {
+    pub const fn gpio23outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio23outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO23 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio23outcfg(&mut self, val: super::vals::Gpio23outcfg) {
+    pub const fn set_gpio23outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO23 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio23intd(&self) -> super::vals::Gpio23intd {
+    pub const fn gpio23intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio23intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO23 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio23intd(&mut self, val: super::vals::Gpio23intd) {
+    pub const fn set_gpio23intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -2663,289 +2663,289 @@ impl Cfgd {
     #[doc = "GPIO24 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio24incfg(&self) -> super::vals::Gpio24incfg {
+    pub const fn gpio24incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio24incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO24 input enable."]
     #[inline(always)]
-    pub const fn set_gpio24incfg(&mut self, val: super::vals::Gpio24incfg) {
+    pub const fn set_gpio24incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO24 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio24outcfg(&self) -> super::vals::Gpio24outcfg {
+    pub const fn gpio24outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio24outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO24 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio24outcfg(&mut self, val: super::vals::Gpio24outcfg) {
+    pub const fn set_gpio24outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO24 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio24intd(&self) -> super::vals::Gpio24intd {
+    pub const fn gpio24intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio24intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO24 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio24intd(&mut self, val: super::vals::Gpio24intd) {
+    pub const fn set_gpio24intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO25 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio25incfg(&self) -> super::vals::Gpio25incfg {
+    pub const fn gpio25incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio25incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO25 input enable."]
     #[inline(always)]
-    pub const fn set_gpio25incfg(&mut self, val: super::vals::Gpio25incfg) {
+    pub const fn set_gpio25incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO25 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio25outcfg(&self) -> super::vals::Gpio25outcfg {
+    pub const fn gpio25outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio25outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO25 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio25outcfg(&mut self, val: super::vals::Gpio25outcfg) {
+    pub const fn set_gpio25outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO25 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio25intd(&self) -> super::vals::Gpio25intd {
+    pub const fn gpio25intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio25intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO25 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio25intd(&mut self, val: super::vals::Gpio25intd) {
+    pub const fn set_gpio25intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO26 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio26incfg(&self) -> super::vals::Gpio26incfg {
+    pub const fn gpio26incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio26incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO26 input enable."]
     #[inline(always)]
-    pub const fn set_gpio26incfg(&mut self, val: super::vals::Gpio26incfg) {
+    pub const fn set_gpio26incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO26 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio26outcfg(&self) -> super::vals::Gpio26outcfg {
+    pub const fn gpio26outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio26outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO26 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio26outcfg(&mut self, val: super::vals::Gpio26outcfg) {
+    pub const fn set_gpio26outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO26 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio26intd(&self) -> super::vals::Gpio26intd {
+    pub const fn gpio26intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio26intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO26 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio26intd(&mut self, val: super::vals::Gpio26intd) {
+    pub const fn set_gpio26intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO27 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio27incfg(&self) -> super::vals::Gpio27incfg {
+    pub const fn gpio27incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio27incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO27 input enable."]
     #[inline(always)]
-    pub const fn set_gpio27incfg(&mut self, val: super::vals::Gpio27incfg) {
+    pub const fn set_gpio27incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO27 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio27outcfg(&self) -> super::vals::Gpio27outcfg {
+    pub const fn gpio27outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio27outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO27 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio27outcfg(&mut self, val: super::vals::Gpio27outcfg) {
+    pub const fn set_gpio27outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO27 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio27intd(&self) -> super::vals::Gpio27intd {
+    pub const fn gpio27intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio27intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO27 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio27intd(&mut self, val: super::vals::Gpio27intd) {
+    pub const fn set_gpio27intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO28 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio28incfg(&self) -> super::vals::Gpio28incfg {
+    pub const fn gpio28incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio28incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO28 input enable."]
     #[inline(always)]
-    pub const fn set_gpio28incfg(&mut self, val: super::vals::Gpio28incfg) {
+    pub const fn set_gpio28incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO28 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio28outcfg(&self) -> super::vals::Gpio28outcfg {
+    pub const fn gpio28outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio28outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO28 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio28outcfg(&mut self, val: super::vals::Gpio28outcfg) {
+    pub const fn set_gpio28outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO28 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio28intd(&self) -> super::vals::Gpio28intd {
+    pub const fn gpio28intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio28intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO28 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio28intd(&mut self, val: super::vals::Gpio28intd) {
+    pub const fn set_gpio28intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO29 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio29incfg(&self) -> super::vals::Gpio29incfg {
+    pub const fn gpio29incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio29incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO29 input enable."]
     #[inline(always)]
-    pub const fn set_gpio29incfg(&mut self, val: super::vals::Gpio29incfg) {
+    pub const fn set_gpio29incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO29 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio29outcfg(&self) -> super::vals::Gpio29outcfg {
+    pub const fn gpio29outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio29outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO29 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio29outcfg(&mut self, val: super::vals::Gpio29outcfg) {
+    pub const fn set_gpio29outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO29 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio29intd(&self) -> super::vals::Gpio29intd {
+    pub const fn gpio29intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio29intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO29 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio29intd(&mut self, val: super::vals::Gpio29intd) {
+    pub const fn set_gpio29intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO30 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio30incfg(&self) -> super::vals::Gpio30incfg {
+    pub const fn gpio30incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio30incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO30 input enable."]
     #[inline(always)]
-    pub const fn set_gpio30incfg(&mut self, val: super::vals::Gpio30incfg) {
+    pub const fn set_gpio30incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO30 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio30outcfg(&self) -> super::vals::Gpio30outcfg {
+    pub const fn gpio30outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio30outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO30 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio30outcfg(&mut self, val: super::vals::Gpio30outcfg) {
+    pub const fn set_gpio30outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO30 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio30intd(&self) -> super::vals::Gpio30intd {
+    pub const fn gpio30intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio30intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO30 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio30intd(&mut self, val: super::vals::Gpio30intd) {
+    pub const fn set_gpio30intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO31 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio31incfg(&self) -> super::vals::Gpio31incfg {
+    pub const fn gpio31incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio31incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO31 input enable."]
     #[inline(always)]
-    pub const fn set_gpio31incfg(&mut self, val: super::vals::Gpio31incfg) {
+    pub const fn set_gpio31incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO31 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio31outcfg(&self) -> super::vals::Gpio31outcfg {
+    pub const fn gpio31outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio31outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO31 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio31outcfg(&mut self, val: super::vals::Gpio31outcfg) {
+    pub const fn set_gpio31outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO31 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio31intd(&self) -> super::vals::Gpio31intd {
+    pub const fn gpio31intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio31intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO31 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio31intd(&mut self, val: super::vals::Gpio31intd) {
+    pub const fn set_gpio31intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -2999,289 +2999,289 @@ impl Cfge {
     #[doc = "GPIO32 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio32incfg(&self) -> super::vals::Gpio32incfg {
+    pub const fn gpio32incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio32incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO32 input enable."]
     #[inline(always)]
-    pub const fn set_gpio32incfg(&mut self, val: super::vals::Gpio32incfg) {
+    pub const fn set_gpio32incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO32 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio32outcfg(&self) -> super::vals::Gpio32outcfg {
+    pub const fn gpio32outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio32outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO32 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio32outcfg(&mut self, val: super::vals::Gpio32outcfg) {
+    pub const fn set_gpio32outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO32 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio32intd(&self) -> super::vals::Gpio32intd {
+    pub const fn gpio32intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio32intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO32 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio32intd(&mut self, val: super::vals::Gpio32intd) {
+    pub const fn set_gpio32intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO33 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio33incfg(&self) -> super::vals::Gpio33incfg {
+    pub const fn gpio33incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio33incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO33 input enable."]
     #[inline(always)]
-    pub const fn set_gpio33incfg(&mut self, val: super::vals::Gpio33incfg) {
+    pub const fn set_gpio33incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO33 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio33outcfg(&self) -> super::vals::Gpio33outcfg {
+    pub const fn gpio33outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio33outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO33 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio33outcfg(&mut self, val: super::vals::Gpio33outcfg) {
+    pub const fn set_gpio33outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO33 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio33intd(&self) -> super::vals::Gpio33intd {
+    pub const fn gpio33intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio33intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO33 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio33intd(&mut self, val: super::vals::Gpio33intd) {
+    pub const fn set_gpio33intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO34 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio34incfg(&self) -> super::vals::Gpio34incfg {
+    pub const fn gpio34incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio34incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO34 input enable."]
     #[inline(always)]
-    pub const fn set_gpio34incfg(&mut self, val: super::vals::Gpio34incfg) {
+    pub const fn set_gpio34incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO34 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio34outcfg(&self) -> super::vals::Gpio34outcfg {
+    pub const fn gpio34outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio34outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO34 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio34outcfg(&mut self, val: super::vals::Gpio34outcfg) {
+    pub const fn set_gpio34outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO34 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio34intd(&self) -> super::vals::Gpio34intd {
+    pub const fn gpio34intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio34intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO34 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio34intd(&mut self, val: super::vals::Gpio34intd) {
+    pub const fn set_gpio34intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO35 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio35incfg(&self) -> super::vals::Gpio35incfg {
+    pub const fn gpio35incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio35incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO35 input enable."]
     #[inline(always)]
-    pub const fn set_gpio35incfg(&mut self, val: super::vals::Gpio35incfg) {
+    pub const fn set_gpio35incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO35 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio35outcfg(&self) -> super::vals::Gpio35outcfg {
+    pub const fn gpio35outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio35outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO35 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio35outcfg(&mut self, val: super::vals::Gpio35outcfg) {
+    pub const fn set_gpio35outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO35 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio35intd(&self) -> super::vals::Gpio35intd {
+    pub const fn gpio35intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio35intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO35 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio35intd(&mut self, val: super::vals::Gpio35intd) {
+    pub const fn set_gpio35intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO36 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio36incfg(&self) -> super::vals::Gpio36incfg {
+    pub const fn gpio36incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio36incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO36 input enable."]
     #[inline(always)]
-    pub const fn set_gpio36incfg(&mut self, val: super::vals::Gpio36incfg) {
+    pub const fn set_gpio36incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO36 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio36outcfg(&self) -> super::vals::Gpio36outcfg {
+    pub const fn gpio36outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio36outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO36 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio36outcfg(&mut self, val: super::vals::Gpio36outcfg) {
+    pub const fn set_gpio36outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO36 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio36intd(&self) -> super::vals::Gpio36intd {
+    pub const fn gpio36intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio36intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO36 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio36intd(&mut self, val: super::vals::Gpio36intd) {
+    pub const fn set_gpio36intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO37 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio37incfg(&self) -> super::vals::Gpio37incfg {
+    pub const fn gpio37incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio37incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO37 input enable."]
     #[inline(always)]
-    pub const fn set_gpio37incfg(&mut self, val: super::vals::Gpio37incfg) {
+    pub const fn set_gpio37incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO37 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio37outcfg(&self) -> super::vals::Gpio37outcfg {
+    pub const fn gpio37outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio37outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO37 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio37outcfg(&mut self, val: super::vals::Gpio37outcfg) {
+    pub const fn set_gpio37outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO37 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio37intd(&self) -> super::vals::Gpio37intd {
+    pub const fn gpio37intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio37intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO37 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio37intd(&mut self, val: super::vals::Gpio37intd) {
+    pub const fn set_gpio37intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO38 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio38incfg(&self) -> super::vals::Gpio38incfg {
+    pub const fn gpio38incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio38incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO38 input enable."]
     #[inline(always)]
-    pub const fn set_gpio38incfg(&mut self, val: super::vals::Gpio38incfg) {
+    pub const fn set_gpio38incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO38 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio38outcfg(&self) -> super::vals::Gpio38outcfg {
+    pub const fn gpio38outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio38outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO38 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio38outcfg(&mut self, val: super::vals::Gpio38outcfg) {
+    pub const fn set_gpio38outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO38 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio38intd(&self) -> super::vals::Gpio38intd {
+    pub const fn gpio38intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio38intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO38 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio38intd(&mut self, val: super::vals::Gpio38intd) {
+    pub const fn set_gpio38intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO39 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio39incfg(&self) -> super::vals::Gpio39incfg {
+    pub const fn gpio39incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio39incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO39 input enable."]
     #[inline(always)]
-    pub const fn set_gpio39incfg(&mut self, val: super::vals::Gpio39incfg) {
+    pub const fn set_gpio39incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO39 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio39outcfg(&self) -> super::vals::Gpio39outcfg {
+    pub const fn gpio39outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio39outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO39 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio39outcfg(&mut self, val: super::vals::Gpio39outcfg) {
+    pub const fn set_gpio39outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO39 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio39intd(&self) -> super::vals::Gpio39intd {
+    pub const fn gpio39intd(&self) -> super::vals::GpiointdIntmode {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio39intd::from_bits(val as u8)
+        super::vals::GpiointdIntmode::from_bits(val as u8)
     }
     #[doc = "GPIO39 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio39intd(&mut self, val: super::vals::Gpio39intd) {
+    pub const fn set_gpio39intd(&mut self, val: super::vals::GpiointdIntmode) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -3335,289 +3335,289 @@ impl Cfgf {
     #[doc = "GPIO40 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio40incfg(&self) -> super::vals::Gpio40incfg {
+    pub const fn gpio40incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio40incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO40 input enable."]
     #[inline(always)]
-    pub const fn set_gpio40incfg(&mut self, val: super::vals::Gpio40incfg) {
+    pub const fn set_gpio40incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO40 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio40outcfg(&self) -> super::vals::Gpio40outcfg {
+    pub const fn gpio40outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio40outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO40 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio40outcfg(&mut self, val: super::vals::Gpio40outcfg) {
+    pub const fn set_gpio40outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO40 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio40intd(&self) -> super::vals::Gpio40intd {
+    pub const fn gpio40intd(&self) -> super::vals::GpiointdIntmode {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio40intd::from_bits(val as u8)
+        super::vals::GpiointdIntmode::from_bits(val as u8)
     }
     #[doc = "GPIO40 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio40intd(&mut self, val: super::vals::Gpio40intd) {
+    pub const fn set_gpio40intd(&mut self, val: super::vals::GpiointdIntmode) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO41 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio41incfg(&self) -> super::vals::Gpio41incfg {
+    pub const fn gpio41incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio41incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO41 input enable."]
     #[inline(always)]
-    pub const fn set_gpio41incfg(&mut self, val: super::vals::Gpio41incfg) {
+    pub const fn set_gpio41incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO41 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio41outcfg(&self) -> super::vals::Gpio41outcfg {
+    pub const fn gpio41outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio41outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO41 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio41outcfg(&mut self, val: super::vals::Gpio41outcfg) {
+    pub const fn set_gpio41outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO41 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio41intd(&self) -> super::vals::Gpio41intd {
+    pub const fn gpio41intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio41intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO41 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio41intd(&mut self, val: super::vals::Gpio41intd) {
+    pub const fn set_gpio41intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "GPIO42 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio42incfg(&self) -> super::vals::Gpio42incfg {
+    pub const fn gpio42incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Gpio42incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO42 input enable."]
     #[inline(always)]
-    pub const fn set_gpio42incfg(&mut self, val: super::vals::Gpio42incfg) {
+    pub const fn set_gpio42incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "GPIO42 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio42outcfg(&self) -> super::vals::Gpio42outcfg {
+    pub const fn gpio42outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 9usize) & 0x03;
-        super::vals::Gpio42outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO42 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio42outcfg(&mut self, val: super::vals::Gpio42outcfg) {
+    pub const fn set_gpio42outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 9usize)) | (((val.to_bits() as u32) & 0x03) << 9usize);
     }
     #[doc = "GPIO42 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio42intd(&self) -> super::vals::Gpio42intd {
+    pub const fn gpio42intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Gpio42intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO42 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio42intd(&mut self, val: super::vals::Gpio42intd) {
+    pub const fn set_gpio42intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "GPIO43 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio43incfg(&self) -> super::vals::Gpio43incfg {
+    pub const fn gpio43incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Gpio43incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO43 input enable."]
     #[inline(always)]
-    pub const fn set_gpio43incfg(&mut self, val: super::vals::Gpio43incfg) {
+    pub const fn set_gpio43incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "GPIO43 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio43outcfg(&self) -> super::vals::Gpio43outcfg {
+    pub const fn gpio43outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 13usize) & 0x03;
-        super::vals::Gpio43outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO43 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio43outcfg(&mut self, val: super::vals::Gpio43outcfg) {
+    pub const fn set_gpio43outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 13usize)) | (((val.to_bits() as u32) & 0x03) << 13usize);
     }
     #[doc = "GPIO43 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio43intd(&self) -> super::vals::Gpio43intd {
+    pub const fn gpio43intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Gpio43intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO43 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio43intd(&mut self, val: super::vals::Gpio43intd) {
+    pub const fn set_gpio43intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "GPIO44 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio44incfg(&self) -> super::vals::Gpio44incfg {
+    pub const fn gpio44incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Gpio44incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO44 input enable."]
     #[inline(always)]
-    pub const fn set_gpio44incfg(&mut self, val: super::vals::Gpio44incfg) {
+    pub const fn set_gpio44incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "GPIO44 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio44outcfg(&self) -> super::vals::Gpio44outcfg {
+    pub const fn gpio44outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 17usize) & 0x03;
-        super::vals::Gpio44outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO44 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio44outcfg(&mut self, val: super::vals::Gpio44outcfg) {
+    pub const fn set_gpio44outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 17usize)) | (((val.to_bits() as u32) & 0x03) << 17usize);
     }
     #[doc = "GPIO44 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio44intd(&self) -> super::vals::Gpio44intd {
+    pub const fn gpio44intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::Gpio44intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO44 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio44intd(&mut self, val: super::vals::Gpio44intd) {
+    pub const fn set_gpio44intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "GPIO45 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio45incfg(&self) -> super::vals::Gpio45incfg {
+    pub const fn gpio45incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::Gpio45incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO45 input enable."]
     #[inline(always)]
-    pub const fn set_gpio45incfg(&mut self, val: super::vals::Gpio45incfg) {
+    pub const fn set_gpio45incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "GPIO45 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio45outcfg(&self) -> super::vals::Gpio45outcfg {
+    pub const fn gpio45outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 21usize) & 0x03;
-        super::vals::Gpio45outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO45 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio45outcfg(&mut self, val: super::vals::Gpio45outcfg) {
+    pub const fn set_gpio45outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 21usize)) | (((val.to_bits() as u32) & 0x03) << 21usize);
     }
     #[doc = "GPIO45 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio45intd(&self) -> super::vals::Gpio45intd {
+    pub const fn gpio45intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Gpio45intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO45 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio45intd(&mut self, val: super::vals::Gpio45intd) {
+    pub const fn set_gpio45intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "GPIO46 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio46incfg(&self) -> super::vals::Gpio46incfg {
+    pub const fn gpio46incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::Gpio46incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO46 input enable."]
     #[inline(always)]
-    pub const fn set_gpio46incfg(&mut self, val: super::vals::Gpio46incfg) {
+    pub const fn set_gpio46incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "GPIO46 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio46outcfg(&self) -> super::vals::Gpio46outcfg {
+    pub const fn gpio46outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 25usize) & 0x03;
-        super::vals::Gpio46outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO46 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio46outcfg(&mut self, val: super::vals::Gpio46outcfg) {
+    pub const fn set_gpio46outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 25usize)) | (((val.to_bits() as u32) & 0x03) << 25usize);
     }
     #[doc = "GPIO46 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio46intd(&self) -> super::vals::Gpio46intd {
+    pub const fn gpio46intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Gpio46intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO46 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio46intd(&mut self, val: super::vals::Gpio46intd) {
+    pub const fn set_gpio46intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "GPIO47 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio47incfg(&self) -> super::vals::Gpio47incfg {
+    pub const fn gpio47incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Gpio47incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO47 input enable."]
     #[inline(always)]
-    pub const fn set_gpio47incfg(&mut self, val: super::vals::Gpio47incfg) {
+    pub const fn set_gpio47incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "GPIO47 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio47outcfg(&self) -> super::vals::Gpio47outcfg {
+    pub const fn gpio47outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 29usize) & 0x03;
-        super::vals::Gpio47outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO47 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio47outcfg(&mut self, val: super::vals::Gpio47outcfg) {
+    pub const fn set_gpio47outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 29usize)) | (((val.to_bits() as u32) & 0x03) << 29usize);
     }
     #[doc = "GPIO47 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio47intd(&self) -> super::vals::Gpio47intd {
+    pub const fn gpio47intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Gpio47intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO47 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio47intd(&mut self, val: super::vals::Gpio47intd) {
+    pub const fn set_gpio47intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -3671,73 +3671,73 @@ impl Cfgg {
     #[doc = "GPIO48 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio48incfg(&self) -> super::vals::Gpio48incfg {
+    pub const fn gpio48incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Gpio48incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO48 input enable."]
     #[inline(always)]
-    pub const fn set_gpio48incfg(&mut self, val: super::vals::Gpio48incfg) {
+    pub const fn set_gpio48incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "GPIO48 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio48outcfg(&self) -> super::vals::Gpio48outcfg {
+    pub const fn gpio48outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 1usize) & 0x03;
-        super::vals::Gpio48outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO48 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio48outcfg(&mut self, val: super::vals::Gpio48outcfg) {
+    pub const fn set_gpio48outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 1usize)) | (((val.to_bits() as u32) & 0x03) << 1usize);
     }
     #[doc = "GPIO48 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio48intd(&self) -> super::vals::Gpio48intd {
+    pub const fn gpio48intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Gpio48intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO48 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio48intd(&mut self, val: super::vals::Gpio48intd) {
+    pub const fn set_gpio48intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "GPIO49 input enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio49incfg(&self) -> super::vals::Gpio49incfg {
+    pub const fn gpio49incfg(&self) -> super::vals::Gpioincfg {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Gpio49incfg::from_bits(val as u8)
+        super::vals::Gpioincfg::from_bits(val as u8)
     }
     #[doc = "GPIO49 input enable."]
     #[inline(always)]
-    pub const fn set_gpio49incfg(&mut self, val: super::vals::Gpio49incfg) {
+    pub const fn set_gpio49incfg(&mut self, val: super::vals::Gpioincfg) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "GPIO49 output configuration."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio49outcfg(&self) -> super::vals::Gpio49outcfg {
+    pub const fn gpio49outcfg(&self) -> super::vals::Gpiooutcfg {
         let val = (self.0 >> 5usize) & 0x03;
-        super::vals::Gpio49outcfg::from_bits(val as u8)
+        super::vals::Gpiooutcfg::from_bits(val as u8)
     }
     #[doc = "GPIO49 output configuration."]
     #[inline(always)]
-    pub const fn set_gpio49outcfg(&mut self, val: super::vals::Gpio49outcfg) {
+    pub const fn set_gpio49outcfg(&mut self, val: super::vals::Gpiooutcfg) {
         self.0 = (self.0 & !(0x03 << 5usize)) | (((val.to_bits() as u32) & 0x03) << 5usize);
     }
     #[doc = "GPIO49 interrupt direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn gpio49intd(&self) -> super::vals::Gpio49intd {
+    pub const fn gpio49intd(&self) -> super::vals::GpiointdNcepol {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Gpio49intd::from_bits(val as u8)
+        super::vals::GpiointdNcepol::from_bits(val as u8)
     }
     #[doc = "GPIO49 interrupt direction."]
     #[inline(always)]
-    pub const fn set_gpio49intd(&mut self, val: super::vals::Gpio49intd) {
+    pub const fn set_gpio49intd(&mut self, val: super::vals::GpiointdNcepol) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
 }
@@ -3773,109 +3773,109 @@ impl Ctencfg {
     #[doc = "CT0 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en0(&self) -> super::vals::En0 {
+    pub const fn en0(&self) -> super::vals::En {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::En0::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT0 Enable."]
     #[inline(always)]
-    pub const fn set_en0(&mut self, val: super::vals::En0) {
+    pub const fn set_en0(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "CT1 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en1(&self) -> super::vals::En1 {
+    pub const fn en1(&self) -> super::vals::En {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::En1::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT1 Enable."]
     #[inline(always)]
-    pub const fn set_en1(&mut self, val: super::vals::En1) {
+    pub const fn set_en1(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "CT2 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en2(&self) -> super::vals::En2 {
+    pub const fn en2(&self) -> super::vals::En {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::En2::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT2 Enable."]
     #[inline(always)]
-    pub const fn set_en2(&mut self, val: super::vals::En2) {
+    pub const fn set_en2(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "CT3 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en3(&self) -> super::vals::En3 {
+    pub const fn en3(&self) -> super::vals::En {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::En3::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT3 Enable."]
     #[inline(always)]
-    pub const fn set_en3(&mut self, val: super::vals::En3) {
+    pub const fn set_en3(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "CT4 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en4(&self) -> super::vals::En4 {
+    pub const fn en4(&self) -> super::vals::En {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::En4::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT4 Enable."]
     #[inline(always)]
-    pub const fn set_en4(&mut self, val: super::vals::En4) {
+    pub const fn set_en4(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "CT5 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en5(&self) -> super::vals::En5 {
+    pub const fn en5(&self) -> super::vals::En {
         let val = (self.0 >> 5usize) & 0x01;
-        super::vals::En5::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT5 Enable."]
     #[inline(always)]
-    pub const fn set_en5(&mut self, val: super::vals::En5) {
+    pub const fn set_en5(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 5usize)) | (((val.to_bits() as u32) & 0x01) << 5usize);
     }
     #[doc = "CT6 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en6(&self) -> super::vals::En6 {
+    pub const fn en6(&self) -> super::vals::En {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::En6::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT6 Enable."]
     #[inline(always)]
-    pub const fn set_en6(&mut self, val: super::vals::En6) {
+    pub const fn set_en6(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "CT7 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en7(&self) -> super::vals::En7 {
+    pub const fn en7(&self) -> super::vals::En {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::En7::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT7 Enable."]
     #[inline(always)]
-    pub const fn set_en7(&mut self, val: super::vals::En7) {
+    pub const fn set_en7(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "CT8 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en8(&self) -> super::vals::En8 {
+    pub const fn en8(&self) -> super::vals::En {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::En8::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT8 Enable."]
     #[inline(always)]
-    pub const fn set_en8(&mut self, val: super::vals::En8) {
+    pub const fn set_en8(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "CT9 Enable."]
@@ -3893,265 +3893,265 @@ impl Ctencfg {
     #[doc = "CT10 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en10(&self) -> super::vals::En10 {
+    pub const fn en10(&self) -> super::vals::En {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::En10::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT10 Enable."]
     #[inline(always)]
-    pub const fn set_en10(&mut self, val: super::vals::En10) {
+    pub const fn set_en10(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "CT11 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en11(&self) -> super::vals::En11 {
+    pub const fn en11(&self) -> super::vals::En {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::En11::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT11 Enable."]
     #[inline(always)]
-    pub const fn set_en11(&mut self, val: super::vals::En11) {
+    pub const fn set_en11(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "CT12 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en12(&self) -> super::vals::En12 {
+    pub const fn en12(&self) -> super::vals::En {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::En12::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT12 Enable."]
     #[inline(always)]
-    pub const fn set_en12(&mut self, val: super::vals::En12) {
+    pub const fn set_en12(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "CT13 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en13(&self) -> super::vals::En13 {
+    pub const fn en13(&self) -> super::vals::En {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::En13::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT13 Enable."]
     #[inline(always)]
-    pub const fn set_en13(&mut self, val: super::vals::En13) {
+    pub const fn set_en13(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "CT14 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en14(&self) -> super::vals::En14 {
+    pub const fn en14(&self) -> super::vals::En {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::En14::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT14 Enable."]
     #[inline(always)]
-    pub const fn set_en14(&mut self, val: super::vals::En14) {
+    pub const fn set_en14(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "CT15 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en15(&self) -> super::vals::En15 {
+    pub const fn en15(&self) -> super::vals::En {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::En15::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT15 Enable."]
     #[inline(always)]
-    pub const fn set_en15(&mut self, val: super::vals::En15) {
+    pub const fn set_en15(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "CT16 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en16(&self) -> super::vals::En16 {
+    pub const fn en16(&self) -> super::vals::En {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::En16::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT16 Enable."]
     #[inline(always)]
-    pub const fn set_en16(&mut self, val: super::vals::En16) {
+    pub const fn set_en16(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "CT17 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en17(&self) -> super::vals::En17 {
+    pub const fn en17(&self) -> super::vals::En {
         let val = (self.0 >> 17usize) & 0x01;
-        super::vals::En17::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT17 Enable."]
     #[inline(always)]
-    pub const fn set_en17(&mut self, val: super::vals::En17) {
+    pub const fn set_en17(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 17usize)) | (((val.to_bits() as u32) & 0x01) << 17usize);
     }
     #[doc = "CT18 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en18(&self) -> super::vals::En18 {
+    pub const fn en18(&self) -> super::vals::En {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::En18::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT18 Enable."]
     #[inline(always)]
-    pub const fn set_en18(&mut self, val: super::vals::En18) {
+    pub const fn set_en18(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "CT19 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en19(&self) -> super::vals::En19 {
+    pub const fn en19(&self) -> super::vals::En {
         let val = (self.0 >> 19usize) & 0x01;
-        super::vals::En19::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT19 Enable."]
     #[inline(always)]
-    pub const fn set_en19(&mut self, val: super::vals::En19) {
+    pub const fn set_en19(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 19usize)) | (((val.to_bits() as u32) & 0x01) << 19usize);
     }
     #[doc = "CT20 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en20(&self) -> super::vals::En20 {
+    pub const fn en20(&self) -> super::vals::En {
         let val = (self.0 >> 20usize) & 0x01;
-        super::vals::En20::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT20 Enable."]
     #[inline(always)]
-    pub const fn set_en20(&mut self, val: super::vals::En20) {
+    pub const fn set_en20(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val.to_bits() as u32) & 0x01) << 20usize);
     }
     #[doc = "CT21 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en21(&self) -> super::vals::En21 {
+    pub const fn en21(&self) -> super::vals::En {
         let val = (self.0 >> 21usize) & 0x01;
-        super::vals::En21::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT21 Enable."]
     #[inline(always)]
-    pub const fn set_en21(&mut self, val: super::vals::En21) {
+    pub const fn set_en21(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 21usize)) | (((val.to_bits() as u32) & 0x01) << 21usize);
     }
     #[doc = "CT22 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en22(&self) -> super::vals::En22 {
+    pub const fn en22(&self) -> super::vals::En {
         let val = (self.0 >> 22usize) & 0x01;
-        super::vals::En22::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT22 Enable."]
     #[inline(always)]
-    pub const fn set_en22(&mut self, val: super::vals::En22) {
+    pub const fn set_en22(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 22usize)) | (((val.to_bits() as u32) & 0x01) << 22usize);
     }
     #[doc = "CT23 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en23(&self) -> super::vals::En23 {
+    pub const fn en23(&self) -> super::vals::En {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::En23::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT23 Enable."]
     #[inline(always)]
-    pub const fn set_en23(&mut self, val: super::vals::En23) {
+    pub const fn set_en23(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "CT24 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en24(&self) -> super::vals::En24 {
+    pub const fn en24(&self) -> super::vals::En {
         let val = (self.0 >> 24usize) & 0x01;
-        super::vals::En24::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT24 Enable."]
     #[inline(always)]
-    pub const fn set_en24(&mut self, val: super::vals::En24) {
+    pub const fn set_en24(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 24usize)) | (((val.to_bits() as u32) & 0x01) << 24usize);
     }
     #[doc = "CT25 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en25(&self) -> super::vals::En25 {
+    pub const fn en25(&self) -> super::vals::En {
         let val = (self.0 >> 25usize) & 0x01;
-        super::vals::En25::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT25 Enable."]
     #[inline(always)]
-    pub const fn set_en25(&mut self, val: super::vals::En25) {
+    pub const fn set_en25(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 25usize)) | (((val.to_bits() as u32) & 0x01) << 25usize);
     }
     #[doc = "CT26 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en26(&self) -> super::vals::En26 {
+    pub const fn en26(&self) -> super::vals::En {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::En26::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT26 Enable."]
     #[inline(always)]
-    pub const fn set_en26(&mut self, val: super::vals::En26) {
+    pub const fn set_en26(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "CT27 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en27(&self) -> super::vals::En27 {
+    pub const fn en27(&self) -> super::vals::En {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::En27::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT27 Enable."]
     #[inline(always)]
-    pub const fn set_en27(&mut self, val: super::vals::En27) {
+    pub const fn set_en27(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "CT28 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en28(&self) -> super::vals::En28 {
+    pub const fn en28(&self) -> super::vals::En {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::En28::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT28 Enable."]
     #[inline(always)]
-    pub const fn set_en28(&mut self, val: super::vals::En28) {
+    pub const fn set_en28(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "CT29 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en29(&self) -> super::vals::En29 {
+    pub const fn en29(&self) -> super::vals::En {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::En29::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT29 Enable."]
     #[inline(always)]
-    pub const fn set_en29(&mut self, val: super::vals::En29) {
+    pub const fn set_en29(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "CT30 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en30(&self) -> super::vals::En30 {
+    pub const fn en30(&self) -> super::vals::En {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::En30::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT30 Enable."]
     #[inline(always)]
-    pub const fn set_en30(&mut self, val: super::vals::En30) {
+    pub const fn set_en30(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
     #[doc = "CT31 Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn en31(&self) -> super::vals::En31 {
+    pub const fn en31(&self) -> super::vals::En {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::En31::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "CT31 Enable."]
     #[inline(always)]
-    pub const fn set_en31(&mut self, val: super::vals::En31) {
+    pub const fn set_en31(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -7431,13 +7431,13 @@ impl Padrega {
     #[doc = "Pad 0 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad0strng(&self) -> super::vals::Pad0strng {
+    pub const fn pad0strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad0strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 0 drive strength."]
     #[inline(always)]
-    pub const fn set_pad0strng(&mut self, val: super::vals::Pad0strng) {
+    pub const fn set_pad0strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 0 function select."]
@@ -7455,13 +7455,13 @@ impl Padrega {
     #[doc = "Pad 0 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad0rsel(&self) -> super::vals::Pad0rsel {
+    pub const fn pad0rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 6usize) & 0x03;
-        super::vals::Pad0rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 0 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad0rsel(&mut self, val: super::vals::Pad0rsel) {
+    pub const fn set_pad0rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 6usize)) | (((val.to_bits() as u32) & 0x03) << 6usize);
     }
     #[doc = "Pad 1 pullup enable."]
@@ -7491,13 +7491,13 @@ impl Padrega {
     #[doc = "Pad 1 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad1strng(&self) -> super::vals::Pad1strng {
+    pub const fn pad1strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad1strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 1 drive strength."]
     #[inline(always)]
-    pub const fn set_pad1strng(&mut self, val: super::vals::Pad1strng) {
+    pub const fn set_pad1strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 1 function select."]
@@ -7515,13 +7515,13 @@ impl Padrega {
     #[doc = "Pad 1 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad1rsel(&self) -> super::vals::Pad1rsel {
+    pub const fn pad1rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Pad1rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 1 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad1rsel(&mut self, val: super::vals::Pad1rsel) {
+    pub const fn set_pad1rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
     #[doc = "Pad 2 pullup enable."]
@@ -7551,13 +7551,13 @@ impl Padrega {
     #[doc = "Pad 2 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad2strng(&self) -> super::vals::Pad2strng {
+    pub const fn pad2strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad2strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 2 drive strength."]
     #[inline(always)]
-    pub const fn set_pad2strng(&mut self, val: super::vals::Pad2strng) {
+    pub const fn set_pad2strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 2 function select."]
@@ -7599,13 +7599,13 @@ impl Padrega {
     #[doc = "Pad 3 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad3strng(&self) -> super::vals::Pad3strng {
+    pub const fn pad3strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad3strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 3 drive strength."]
     #[inline(always)]
-    pub const fn set_pad3strng(&mut self, val: super::vals::Pad3strng) {
+    pub const fn set_pad3strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 3 function select."]
@@ -7702,13 +7702,13 @@ impl Padregb {
     #[doc = "Pad 4 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad4strng(&self) -> super::vals::Pad4strng {
+    pub const fn pad4strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad4strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 4 drive strength."]
     #[inline(always)]
-    pub const fn set_pad4strng(&mut self, val: super::vals::Pad4strng) {
+    pub const fn set_pad4strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 4 function select."]
@@ -7750,13 +7750,13 @@ impl Padregb {
     #[doc = "Pad 5 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad5strng(&self) -> super::vals::Pad5strng {
+    pub const fn pad5strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad5strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 5 drive strength."]
     #[inline(always)]
-    pub const fn set_pad5strng(&mut self, val: super::vals::Pad5strng) {
+    pub const fn set_pad5strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 5 function select."]
@@ -7774,13 +7774,13 @@ impl Padregb {
     #[doc = "Pad 5 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad5rsel(&self) -> super::vals::Pad5rsel {
+    pub const fn pad5rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Pad5rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 5 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad5rsel(&mut self, val: super::vals::Pad5rsel) {
+    pub const fn set_pad5rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
     #[doc = "Pad 6 pullup enable."]
@@ -7810,13 +7810,13 @@ impl Padregb {
     #[doc = "Pad 6 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad6strng(&self) -> super::vals::Pad6strng {
+    pub const fn pad6strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad6strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 6 drive strength."]
     #[inline(always)]
-    pub const fn set_pad6strng(&mut self, val: super::vals::Pad6strng) {
+    pub const fn set_pad6strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 6 function select."]
@@ -7834,13 +7834,13 @@ impl Padregb {
     #[doc = "Pad 6 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad6rsel(&self) -> super::vals::Pad6rsel {
+    pub const fn pad6rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 22usize) & 0x03;
-        super::vals::Pad6rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 6 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad6rsel(&mut self, val: super::vals::Pad6rsel) {
+    pub const fn set_pad6rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 22usize)) | (((val.to_bits() as u32) & 0x03) << 22usize);
     }
     #[doc = "Pad 7 pullup enable."]
@@ -7870,13 +7870,13 @@ impl Padregb {
     #[doc = "Pad 7 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad7strng(&self) -> super::vals::Pad7strng {
+    pub const fn pad7strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad7strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 7 drive strength."]
     #[inline(always)]
-    pub const fn set_pad7strng(&mut self, val: super::vals::Pad7strng) {
+    pub const fn set_pad7strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 7 function select."]
@@ -7960,13 +7960,13 @@ impl Padregc {
     #[doc = "Pad 8 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad8strng(&self) -> super::vals::Pad8strng {
+    pub const fn pad8strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad8strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 8 drive strength."]
     #[inline(always)]
-    pub const fn set_pad8strng(&mut self, val: super::vals::Pad8strng) {
+    pub const fn set_pad8strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 8 function select."]
@@ -7984,13 +7984,13 @@ impl Padregc {
     #[doc = "Pad 8 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad8rsel(&self) -> super::vals::Pad8rsel {
+    pub const fn pad8rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 6usize) & 0x03;
-        super::vals::Pad8rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 8 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad8rsel(&mut self, val: super::vals::Pad8rsel) {
+    pub const fn set_pad8rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 6usize)) | (((val.to_bits() as u32) & 0x03) << 6usize);
     }
     #[doc = "Pad 9 pullup enable."]
@@ -8020,13 +8020,13 @@ impl Padregc {
     #[doc = "Pad 9 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad9strng(&self) -> super::vals::Pad9strng {
+    pub const fn pad9strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad9strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 9 drive strength."]
     #[inline(always)]
-    pub const fn set_pad9strng(&mut self, val: super::vals::Pad9strng) {
+    pub const fn set_pad9strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 9 function select."]
@@ -8044,13 +8044,13 @@ impl Padregc {
     #[doc = "Pad 9 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad9rsel(&self) -> super::vals::Pad9rsel {
+    pub const fn pad9rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Pad9rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 9 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad9rsel(&mut self, val: super::vals::Pad9rsel) {
+    pub const fn set_pad9rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
     #[doc = "Pad 10 pullup enable."]
@@ -8080,13 +8080,13 @@ impl Padregc {
     #[doc = "Pad 10 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad10strng(&self) -> super::vals::Pad10strng {
+    pub const fn pad10strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad10strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 10 drive strength."]
     #[inline(always)]
-    pub const fn set_pad10strng(&mut self, val: super::vals::Pad10strng) {
+    pub const fn set_pad10strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 10 function select."]
@@ -8128,13 +8128,13 @@ impl Padregc {
     #[doc = "Pad 11 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad11strng(&self) -> super::vals::Pad11strng {
+    pub const fn pad11strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad11strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 11 drive strength."]
     #[inline(always)]
-    pub const fn set_pad11strng(&mut self, val: super::vals::Pad11strng) {
+    pub const fn set_pad11strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 11 function select."]
@@ -8218,13 +8218,13 @@ impl Padregd {
     #[doc = "Pad 12 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad12strng(&self) -> super::vals::Pad12strng {
+    pub const fn pad12strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad12strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 12 drive strength."]
     #[inline(always)]
-    pub const fn set_pad12strng(&mut self, val: super::vals::Pad12strng) {
+    pub const fn set_pad12strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 12 function select."]
@@ -8266,13 +8266,13 @@ impl Padregd {
     #[doc = "Pad 13 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad13strng(&self) -> super::vals::Pad13strng {
+    pub const fn pad13strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad13strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 13 drive strength."]
     #[inline(always)]
-    pub const fn set_pad13strng(&mut self, val: super::vals::Pad13strng) {
+    pub const fn set_pad13strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 13 function select."]
@@ -8314,13 +8314,13 @@ impl Padregd {
     #[doc = "Pad 14 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad14strng(&self) -> super::vals::Pad14strng {
+    pub const fn pad14strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad14strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 14 drive strength."]
     #[inline(always)]
-    pub const fn set_pad14strng(&mut self, val: super::vals::Pad14strng) {
+    pub const fn set_pad14strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 14 function select."]
@@ -8362,13 +8362,13 @@ impl Padregd {
     #[doc = "Pad 15 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad15strng(&self) -> super::vals::Pad15strng {
+    pub const fn pad15strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad15strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 15 drive strength."]
     #[inline(always)]
-    pub const fn set_pad15strng(&mut self, val: super::vals::Pad15strng) {
+    pub const fn set_pad15strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 15 function select."]
@@ -8450,13 +8450,13 @@ impl Padrege {
     #[doc = "Pad 16 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad16strng(&self) -> super::vals::Pad16strng {
+    pub const fn pad16strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad16strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 16 drive strength."]
     #[inline(always)]
-    pub const fn set_pad16strng(&mut self, val: super::vals::Pad16strng) {
+    pub const fn set_pad16strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 16 function select."]
@@ -8498,13 +8498,13 @@ impl Padrege {
     #[doc = "Pad 17 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad17strng(&self) -> super::vals::Pad17strng {
+    pub const fn pad17strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad17strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 17 drive strength."]
     #[inline(always)]
-    pub const fn set_pad17strng(&mut self, val: super::vals::Pad17strng) {
+    pub const fn set_pad17strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 17 function select."]
@@ -8546,13 +8546,13 @@ impl Padrege {
     #[doc = "Pad 18 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad18strng(&self) -> super::vals::Pad18strng {
+    pub const fn pad18strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad18strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 18 drive strength."]
     #[inline(always)]
-    pub const fn set_pad18strng(&mut self, val: super::vals::Pad18strng) {
+    pub const fn set_pad18strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 18 function select."]
@@ -8594,13 +8594,13 @@ impl Padrege {
     #[doc = "Pad 19 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad19strng(&self) -> super::vals::Pad19strng {
+    pub const fn pad19strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad19strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 19 drive strength."]
     #[inline(always)]
-    pub const fn set_pad19strng(&mut self, val: super::vals::Pad19strng) {
+    pub const fn set_pad19strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 19 function select."]
@@ -8682,13 +8682,13 @@ impl Padregf {
     #[doc = "Pad 20 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad20strng(&self) -> super::vals::Pad20strng {
+    pub const fn pad20strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad20strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 20 drive strength."]
     #[inline(always)]
-    pub const fn set_pad20strng(&mut self, val: super::vals::Pad20strng) {
+    pub const fn set_pad20strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 20 function select."]
@@ -8730,13 +8730,13 @@ impl Padregf {
     #[doc = "Pad 21 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad21strng(&self) -> super::vals::Pad21strng {
+    pub const fn pad21strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad21strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 21 drive strength."]
     #[inline(always)]
-    pub const fn set_pad21strng(&mut self, val: super::vals::Pad21strng) {
+    pub const fn set_pad21strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 21 function select."]
@@ -8778,13 +8778,13 @@ impl Padregf {
     #[doc = "Pad 22 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad22strng(&self) -> super::vals::Pad22strng {
+    pub const fn pad22strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad22strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 22 drive strength."]
     #[inline(always)]
-    pub const fn set_pad22strng(&mut self, val: super::vals::Pad22strng) {
+    pub const fn set_pad22strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 22 function select."]
@@ -8826,13 +8826,13 @@ impl Padregf {
     #[doc = "Pad 23 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad23strng(&self) -> super::vals::Pad23strng {
+    pub const fn pad23strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad23strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 23 drive strength."]
     #[inline(always)]
-    pub const fn set_pad23strng(&mut self, val: super::vals::Pad23strng) {
+    pub const fn set_pad23strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 23 function select."]
@@ -8914,13 +8914,13 @@ impl Padregg {
     #[doc = "Pad 24 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad24strng(&self) -> super::vals::Pad24strng {
+    pub const fn pad24strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad24strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 24 drive strength."]
     #[inline(always)]
-    pub const fn set_pad24strng(&mut self, val: super::vals::Pad24strng) {
+    pub const fn set_pad24strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 24 function select."]
@@ -8962,13 +8962,13 @@ impl Padregg {
     #[doc = "Pad 25 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad25strng(&self) -> super::vals::Pad25strng {
+    pub const fn pad25strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad25strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 25 drive strength."]
     #[inline(always)]
-    pub const fn set_pad25strng(&mut self, val: super::vals::Pad25strng) {
+    pub const fn set_pad25strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 25 function select."]
@@ -8986,13 +8986,13 @@ impl Padregg {
     #[doc = "Pad 25 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad25rsel(&self) -> super::vals::Pad25rsel {
+    pub const fn pad25rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Pad25rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 25 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad25rsel(&mut self, val: super::vals::Pad25rsel) {
+    pub const fn set_pad25rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
     #[doc = "Pad 26 pullup enable."]
@@ -9022,13 +9022,13 @@ impl Padregg {
     #[doc = "Pad 26 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad26strng(&self) -> super::vals::Pad26strng {
+    pub const fn pad26strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad26strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 26 drive strength."]
     #[inline(always)]
-    pub const fn set_pad26strng(&mut self, val: super::vals::Pad26strng) {
+    pub const fn set_pad26strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 26 function select."]
@@ -9070,13 +9070,13 @@ impl Padregg {
     #[doc = "Pad 27 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad27strng(&self) -> super::vals::Pad27strng {
+    pub const fn pad27strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad27strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 27 drive strength."]
     #[inline(always)]
-    pub const fn set_pad27strng(&mut self, val: super::vals::Pad27strng) {
+    pub const fn set_pad27strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 27 function select."]
@@ -9094,13 +9094,13 @@ impl Padregg {
     #[doc = "Pad 27 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad27rsel(&self) -> super::vals::Pad27rsel {
+    pub const fn pad27rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 30usize) & 0x03;
-        super::vals::Pad27rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 27 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad27rsel(&mut self, val: super::vals::Pad27rsel) {
+    pub const fn set_pad27rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 30usize)) | (((val.to_bits() as u32) & 0x03) << 30usize);
     }
 }
@@ -9172,13 +9172,13 @@ impl Padregh {
     #[doc = "Pad 28 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad28strng(&self) -> super::vals::Pad28strng {
+    pub const fn pad28strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad28strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 28 drive strength."]
     #[inline(always)]
-    pub const fn set_pad28strng(&mut self, val: super::vals::Pad28strng) {
+    pub const fn set_pad28strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 28 function select."]
@@ -9220,13 +9220,13 @@ impl Padregh {
     #[doc = "Pad 29 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad29strng(&self) -> super::vals::Pad29strng {
+    pub const fn pad29strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad29strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 29 drive strength."]
     #[inline(always)]
-    pub const fn set_pad29strng(&mut self, val: super::vals::Pad29strng) {
+    pub const fn set_pad29strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 29 function select."]
@@ -9268,13 +9268,13 @@ impl Padregh {
     #[doc = "Pad 30 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad30strng(&self) -> super::vals::Pad30strng {
+    pub const fn pad30strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad30strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 30 drive strength."]
     #[inline(always)]
-    pub const fn set_pad30strng(&mut self, val: super::vals::Pad30strng) {
+    pub const fn set_pad30strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 30 function select."]
@@ -9316,13 +9316,13 @@ impl Padregh {
     #[doc = "Pad 31 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad31strng(&self) -> super::vals::Pad31strng {
+    pub const fn pad31strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad31strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 31 drive strength."]
     #[inline(always)]
-    pub const fn set_pad31strng(&mut self, val: super::vals::Pad31strng) {
+    pub const fn set_pad31strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 31 function select."]
@@ -9404,13 +9404,13 @@ impl Padregi {
     #[doc = "Pad 32 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad32strng(&self) -> super::vals::Pad32strng {
+    pub const fn pad32strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad32strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 32 drive strength."]
     #[inline(always)]
-    pub const fn set_pad32strng(&mut self, val: super::vals::Pad32strng) {
+    pub const fn set_pad32strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 32 function select."]
@@ -9452,13 +9452,13 @@ impl Padregi {
     #[doc = "Pad 33 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad33strng(&self) -> super::vals::Pad33strng {
+    pub const fn pad33strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad33strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 33 drive strength."]
     #[inline(always)]
-    pub const fn set_pad33strng(&mut self, val: super::vals::Pad33strng) {
+    pub const fn set_pad33strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 33 function select."]
@@ -9500,13 +9500,13 @@ impl Padregi {
     #[doc = "Pad 34 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad34strng(&self) -> super::vals::Pad34strng {
+    pub const fn pad34strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad34strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 34 drive strength."]
     #[inline(always)]
-    pub const fn set_pad34strng(&mut self, val: super::vals::Pad34strng) {
+    pub const fn set_pad34strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 34 function select."]
@@ -9548,13 +9548,13 @@ impl Padregi {
     #[doc = "Pad 35 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad35strng(&self) -> super::vals::Pad35strng {
+    pub const fn pad35strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad35strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 35 drive strength."]
     #[inline(always)]
-    pub const fn set_pad35strng(&mut self, val: super::vals::Pad35strng) {
+    pub const fn set_pad35strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 35 function select."]
@@ -9636,13 +9636,13 @@ impl Padregj {
     #[doc = "Pad 36 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad36strng(&self) -> super::vals::Pad36strng {
+    pub const fn pad36strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad36strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 36 drive strength."]
     #[inline(always)]
-    pub const fn set_pad36strng(&mut self, val: super::vals::Pad36strng) {
+    pub const fn set_pad36strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 36 function select."]
@@ -9696,13 +9696,13 @@ impl Padregj {
     #[doc = "Pad 37 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad37strng(&self) -> super::vals::Pad37strng {
+    pub const fn pad37strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad37strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 37 drive strength."]
     #[inline(always)]
-    pub const fn set_pad37strng(&mut self, val: super::vals::Pad37strng) {
+    pub const fn set_pad37strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 37 function select."]
@@ -9756,13 +9756,13 @@ impl Padregj {
     #[doc = "Pad 38 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad38strng(&self) -> super::vals::Pad38strng {
+    pub const fn pad38strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad38strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 38 drive strength."]
     #[inline(always)]
-    pub const fn set_pad38strng(&mut self, val: super::vals::Pad38strng) {
+    pub const fn set_pad38strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 38 function select."]
@@ -9804,13 +9804,13 @@ impl Padregj {
     #[doc = "Pad 39 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad39strng(&self) -> super::vals::Pad39strng {
+    pub const fn pad39strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad39strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 39 drive strength."]
     #[inline(always)]
-    pub const fn set_pad39strng(&mut self, val: super::vals::Pad39strng) {
+    pub const fn set_pad39strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 39 function select."]
@@ -9828,13 +9828,13 @@ impl Padregj {
     #[doc = "Pad 39 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad39rsel(&self) -> super::vals::Pad39rsel {
+    pub const fn pad39rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 30usize) & 0x03;
-        super::vals::Pad39rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 39 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad39rsel(&mut self, val: super::vals::Pad39rsel) {
+    pub const fn set_pad39rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 30usize)) | (((val.to_bits() as u32) & 0x03) << 30usize);
     }
 }
@@ -9907,13 +9907,13 @@ impl Padregk {
     #[doc = "Pad 40 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad40strng(&self) -> super::vals::Pad40strng {
+    pub const fn pad40strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad40strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 40 drive strength."]
     #[inline(always)]
-    pub const fn set_pad40strng(&mut self, val: super::vals::Pad40strng) {
+    pub const fn set_pad40strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 40 function select."]
@@ -9931,13 +9931,13 @@ impl Padregk {
     #[doc = "Pad 40 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad40rsel(&self) -> super::vals::Pad40rsel {
+    pub const fn pad40rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 6usize) & 0x03;
-        super::vals::Pad40rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 40 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad40rsel(&mut self, val: super::vals::Pad40rsel) {
+    pub const fn set_pad40rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 6usize)) | (((val.to_bits() as u32) & 0x03) << 6usize);
     }
     #[doc = "Pad 41 pullup enable."]
@@ -9967,13 +9967,13 @@ impl Padregk {
     #[doc = "Pad 41 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad41strng(&self) -> super::vals::Pad41strng {
+    pub const fn pad41strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad41strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 41 drive strength."]
     #[inline(always)]
-    pub const fn set_pad41strng(&mut self, val: super::vals::Pad41strng) {
+    pub const fn set_pad41strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 41 function select."]
@@ -10027,13 +10027,13 @@ impl Padregk {
     #[doc = "Pad 42 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad42strng(&self) -> super::vals::Pad42strng {
+    pub const fn pad42strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad42strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 42 drive strength."]
     #[inline(always)]
-    pub const fn set_pad42strng(&mut self, val: super::vals::Pad42strng) {
+    pub const fn set_pad42strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 42 function select."]
@@ -10051,13 +10051,13 @@ impl Padregk {
     #[doc = "Pad 42 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad42rsel(&self) -> super::vals::Pad42rsel {
+    pub const fn pad42rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 22usize) & 0x03;
-        super::vals::Pad42rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 42 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad42rsel(&mut self, val: super::vals::Pad42rsel) {
+    pub const fn set_pad42rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 22usize)) | (((val.to_bits() as u32) & 0x03) << 22usize);
     }
     #[doc = "Pad 43 pullup enable."]
@@ -10087,13 +10087,13 @@ impl Padregk {
     #[doc = "Pad 43 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad43strng(&self) -> super::vals::Pad43strng {
+    pub const fn pad43strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad43strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 43 drive strength."]
     #[inline(always)]
-    pub const fn set_pad43strng(&mut self, val: super::vals::Pad43strng) {
+    pub const fn set_pad43strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 43 function select."]
@@ -10111,13 +10111,13 @@ impl Padregk {
     #[doc = "Pad 43 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad43rsel(&self) -> super::vals::Pad43rsel {
+    pub const fn pad43rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 30usize) & 0x03;
-        super::vals::Pad43rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 43 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad43rsel(&mut self, val: super::vals::Pad43rsel) {
+    pub const fn set_pad43rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 30usize)) | (((val.to_bits() as u32) & 0x03) << 30usize);
     }
 }
@@ -10191,13 +10191,13 @@ impl Padregl {
     #[doc = "Pad 44 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad44strng(&self) -> super::vals::Pad44strng {
+    pub const fn pad44strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad44strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 44 drive strength."]
     #[inline(always)]
-    pub const fn set_pad44strng(&mut self, val: super::vals::Pad44strng) {
+    pub const fn set_pad44strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 44 function select."]
@@ -10239,13 +10239,13 @@ impl Padregl {
     #[doc = "Pad 45 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad45strng(&self) -> super::vals::Pad45strng {
+    pub const fn pad45strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad45strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 45 drive strength."]
     #[inline(always)]
-    pub const fn set_pad45strng(&mut self, val: super::vals::Pad45strng) {
+    pub const fn set_pad45strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 45 function select."]
@@ -10287,13 +10287,13 @@ impl Padregl {
     #[doc = "Pad 46 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad46strng(&self) -> super::vals::Pad46strng {
+    pub const fn pad46strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Pad46strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 46 drive strength."]
     #[inline(always)]
-    pub const fn set_pad46strng(&mut self, val: super::vals::Pad46strng) {
+    pub const fn set_pad46strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Pad 46 function select."]
@@ -10335,13 +10335,13 @@ impl Padregl {
     #[doc = "Pad 47 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad47strng(&self) -> super::vals::Pad47strng {
+    pub const fn pad47strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 26usize) & 0x01;
-        super::vals::Pad47strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 47 drive strength."]
     #[inline(always)]
-    pub const fn set_pad47strng(&mut self, val: super::vals::Pad47strng) {
+    pub const fn set_pad47strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 26usize)) | (((val.to_bits() as u32) & 0x01) << 26usize);
     }
     #[doc = "Pad 47 function select."]
@@ -10423,13 +10423,13 @@ impl Padregm {
     #[doc = "Pad 48 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad48strng(&self) -> super::vals::Pad48strng {
+    pub const fn pad48strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Pad48strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 48 drive strength."]
     #[inline(always)]
-    pub const fn set_pad48strng(&mut self, val: super::vals::Pad48strng) {
+    pub const fn set_pad48strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Pad 48 function select."]
@@ -10447,13 +10447,13 @@ impl Padregm {
     #[doc = "Pad 48 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad48rsel(&self) -> super::vals::Pad48rsel {
+    pub const fn pad48rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 6usize) & 0x03;
-        super::vals::Pad48rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 48 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad48rsel(&mut self, val: super::vals::Pad48rsel) {
+    pub const fn set_pad48rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 6usize)) | (((val.to_bits() as u32) & 0x03) << 6usize);
     }
     #[doc = "Pad 49 pullup enable."]
@@ -10483,13 +10483,13 @@ impl Padregm {
     #[doc = "Pad 49 drive strength."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad49strng(&self) -> super::vals::Pad49strng {
+    pub const fn pad49strng(&self) -> super::vals::Padstrng {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pad49strng::from_bits(val as u8)
+        super::vals::Padstrng::from_bits(val as u8)
     }
     #[doc = "Pad 49 drive strength."]
     #[inline(always)]
-    pub const fn set_pad49strng(&mut self, val: super::vals::Pad49strng) {
+    pub const fn set_pad49strng(&mut self, val: super::vals::Padstrng) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Pad 49 function select."]
@@ -10507,13 +10507,13 @@ impl Padregm {
     #[doc = "Pad 49 pullup resistor selection."]
     #[must_use]
     #[inline(always)]
-    pub const fn pad49rsel(&self) -> super::vals::Pad49rsel {
+    pub const fn pad49rsel(&self) -> super::vals::Padrsel {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Pad49rsel::from_bits(val as u8)
+        super::vals::Padrsel::from_bits(val as u8)
     }
     #[doc = "Pad 49 pullup resistor selection."]
     #[inline(always)]
-    pub const fn set_pad49rsel(&mut self, val: super::vals::Pad49rsel) {
+    pub const fn set_pad49rsel(&mut self, val: super::vals::Padrsel) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
 }
@@ -10637,13 +10637,13 @@ impl Stmrcap {
     #[doc = "STIMER Capture 0 Polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn stpol0(&self) -> super::vals::Stpol0 {
+    pub const fn stpol0(&self) -> super::vals::Stpol {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Stpol0::from_bits(val as u8)
+        super::vals::Stpol::from_bits(val as u8)
     }
     #[doc = "STIMER Capture 0 Polarity."]
     #[inline(always)]
-    pub const fn set_stpol0(&mut self, val: super::vals::Stpol0) {
+    pub const fn set_stpol0(&mut self, val: super::vals::Stpol) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "STIMER Capture 1 Select."]
@@ -10661,13 +10661,13 @@ impl Stmrcap {
     #[doc = "STIMER Capture 1 Polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn stpol1(&self) -> super::vals::Stpol1 {
+    pub const fn stpol1(&self) -> super::vals::Stpol {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Stpol1::from_bits(val as u8)
+        super::vals::Stpol::from_bits(val as u8)
     }
     #[doc = "STIMER Capture 1 Polarity."]
     #[inline(always)]
-    pub const fn set_stpol1(&mut self, val: super::vals::Stpol1) {
+    pub const fn set_stpol1(&mut self, val: super::vals::Stpol) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "STIMER Capture 2 Select."]
@@ -10685,13 +10685,13 @@ impl Stmrcap {
     #[doc = "STIMER Capture 2 Polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn stpol2(&self) -> super::vals::Stpol2 {
+    pub const fn stpol2(&self) -> super::vals::Stpol {
         let val = (self.0 >> 22usize) & 0x01;
-        super::vals::Stpol2::from_bits(val as u8)
+        super::vals::Stpol::from_bits(val as u8)
     }
     #[doc = "STIMER Capture 2 Polarity."]
     #[inline(always)]
-    pub const fn set_stpol2(&mut self, val: super::vals::Stpol2) {
+    pub const fn set_stpol2(&mut self, val: super::vals::Stpol) {
         self.0 = (self.0 & !(0x01 << 22usize)) | (((val.to_bits() as u32) & 0x01) << 22usize);
     }
     #[doc = "STIMER Capture 3 Select."]
@@ -10709,13 +10709,13 @@ impl Stmrcap {
     #[doc = "STIMER Capture 3 Polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn stpol3(&self) -> super::vals::Stpol3 {
+    pub const fn stpol3(&self) -> super::vals::Stpol {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Stpol3::from_bits(val as u8)
+        super::vals::Stpol::from_bits(val as u8)
     }
     #[doc = "STIMER Capture 3 Polarity."]
     #[inline(always)]
-    pub const fn set_stpol3(&mut self, val: super::vals::Stpol3) {
+    pub const fn set_stpol3(&mut self, val: super::vals::Stpol) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }

@@ -549,37 +549,37 @@ impl Bootloader {
     #[doc = "Indicates whether the secure boot feature is enabled."]
     #[must_use]
     #[inline(always)]
-    pub const fn secbootfeature(&self) -> super::vals::Secbootfeature {
+    pub const fn secbootfeature(&self) -> super::vals::Secbootstatus {
         let val = (self.0 >> 26usize) & 0x03;
-        super::vals::Secbootfeature::from_bits(val as u8)
+        super::vals::Secbootstatus::from_bits(val as u8)
     }
     #[doc = "Indicates whether the secure boot feature is enabled."]
     #[inline(always)]
-    pub const fn set_secbootfeature(&mut self, val: super::vals::Secbootfeature) {
+    pub const fn set_secbootfeature(&mut self, val: super::vals::Secbootstatus) {
         self.0 = (self.0 & !(0x03 << 26usize)) | (((val.to_bits() as u32) & 0x03) << 26usize);
     }
     #[doc = "Indicates whether the secure boot on cold reset is enabled."]
     #[must_use]
     #[inline(always)]
-    pub const fn secboot(&self) -> super::vals::Secboot {
+    pub const fn secboot(&self) -> super::vals::Secbootstatus {
         let val = (self.0 >> 28usize) & 0x03;
-        super::vals::Secboot::from_bits(val as u8)
+        super::vals::Secbootstatus::from_bits(val as u8)
     }
     #[doc = "Indicates whether the secure boot on cold reset is enabled."]
     #[inline(always)]
-    pub const fn set_secboot(&mut self, val: super::vals::Secboot) {
+    pub const fn set_secboot(&mut self, val: super::vals::Secbootstatus) {
         self.0 = (self.0 & !(0x03 << 28usize)) | (((val.to_bits() as u32) & 0x03) << 28usize);
     }
     #[doc = "Indicates whether the secure boot on warm reset is enabled."]
     #[must_use]
     #[inline(always)]
-    pub const fn secbootonrst(&self) -> super::vals::Secbootonrst {
+    pub const fn secbootonrst(&self) -> super::vals::Secbootstatus {
         let val = (self.0 >> 30usize) & 0x03;
-        super::vals::Secbootonrst::from_bits(val as u8)
+        super::vals::Secbootstatus::from_bits(val as u8)
     }
     #[doc = "Indicates whether the secure boot on warm reset is enabled."]
     #[inline(always)]
-    pub const fn set_secbootonrst(&mut self, val: super::vals::Secbootonrst) {
+    pub const fn set_secbootonrst(&mut self, val: super::vals::Secbootstatus) {
         self.0 = (self.0 & !(0x03 << 30usize)) | (((val.to_bits() as u32) & 0x03) << 30usize);
     }
 }

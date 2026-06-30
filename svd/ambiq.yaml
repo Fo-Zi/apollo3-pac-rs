@@ -5,3 +5,139 @@ transforms:
       from: .*
       useless: true
   - !DeleteUselessEnums
+
+  # ============ GPIO ============
+  - !MergeEnums
+      from: gpio::vals::Gpio\d+(incfg|outcfg)
+      to: gpio::vals::Gpio$1
+  - !MergeEnums
+      from: gpio::vals::Gpio(5|6|39|40)intd
+      to: gpio::vals::GpiointdIntmode
+  - !MergeEnums
+      from:
+        include: "gpio::vals::Gpio\\d+intd"
+        exclude: "gpio::vals::Gpio(5|6|39|40)intd"
+      to: gpio::vals::GpiointdNcepol
+  - !MergeEnums
+      from: gpio::vals::Pad\d+rsel
+      to: gpio::vals::Padrsel
+  - !MergeEnums
+      from: gpio::vals::Pad\d+strng
+      to: gpio::vals::Padstrng
+  - !MergeEnums
+      from: gpio::vals::Stpol\d+
+      to: gpio::vals::Stpol
+
+  # ============ CTIMER ============
+  - !MergeEnums
+      from: ctimer::vals::Tmra\d+(pol|clr|fn|nosync|en23)
+      to: ctimer::vals::Tmra$1
+  - !MergeEnums
+      from: ctimer::vals::Tmrb\d+(pol|clr|fn|nosync|en23)
+      to: ctimer::vals::Tmrb$1
+  - !MergeEnums
+      from: ctimer::vals::Tmra\d+pol23
+      to: ctimer::vals::Tmrapol23
+      check: Layout
+  - !MergeEnums
+      from: ctimer::vals::Tmrb\d+pol23
+      to: ctimer::vals::Tmrbpol23
+      check: Layout
+  - !MergeEnums
+      from: ctimer::vals::Ena\d+
+      to: ctimer::vals::Ena
+  - !MergeEnums
+      from: ctimer::vals::Enb\d+
+      to: ctimer::vals::Enb
+  - !MergeEnums
+      from: ctimer::vals::Ctlink\d+
+      to: ctimer::vals::Ctlink
+
+  # ============ ADC ============
+  - !MergeEnums
+      from: adc::vals::Adsel\d+
+      to: adc::vals::Adsel
+  - !MergeEnums
+      from: adc::vals::Chsel\d+
+      to: adc::vals::Chsel
+  - !MergeEnums
+      from: adc::vals::Prmode\d+
+      to: adc::vals::Prmode
+
+  # ============ GPIO (interrupt enables) ============
+  # Per-pad interrupt enable bits.
+  - !MergeEnums
+      from: gpio::vals::En\d+
+      to: gpio::vals::En
+
+  # ============ Cross-peripheral shared ============
+  - !MergeEnums
+      from: .*::Dmadir
+      to: shared::Dmadir
+  - !MergeEnums
+      from: .*::Cmdstat
+      to: shared::Cmdstat
+  - !MergeEnums
+      from: .*::Fsel
+      to: shared::Fsel
+  - !MergeEnums
+      from: .*::Spha
+      to: shared::Spha
+  - !MergeEnums
+      from: .*::Spilsb
+      to: shared::Spilsb
+  - !MergeEnums
+      from: (bleif|iom0)::vals::Spol
+      to: shared::Spol
+
+  # ============ BLEIF power-gate machine ============
+  - !MergeEnums
+      from: bleif::vals::(Blehreqctl|Dcdcflgctl|Pwrisoctl|Spiisoctl|Wakeupctl)
+      to: bleif::vals::Powerctl
+
+  # ============ MCUCTRL secure-boot status ============
+  - !MergeEnums
+      from: mcuctrl::vals::Secboot.*
+      to: mcuctrl::vals::Secbootstatus
+
+  # ============ CTIMER A/B unification ============
+  - !MergeEnums
+      from: ctimer::vals::Tmr[ab](pol|clr|fn|nosync)
+      to: ctimer::vals::Tmr$1
+  - !MergeEnums
+      from: ctimer::vals::Tmr[ab]pol23
+      to: ctimer::vals::Tmrpol23
+  - !MergeEnums
+      from: ctimer::vals::Tmr[ab]en23
+      to: ctimer::vals::Tmren23
+  - !MergeEnums
+      from: ctimer::vals::(Ena|Enb)
+      to: ctimer::vals::En
+
+  # ============ BLEIF/IOM0 flow-control polarity ============
+  - !MergeEnums
+      from: bleif::vals::(Rdfcpol|Wtfcpol)
+      to: bleif::vals::Fcpol
+  - !MergeEnums
+      from: iom0::vals::(Rdfcpol|Wtfcpol)
+      to: iom0::vals::Fcpol
+
+  # ============ CLKGEN oscillator stop ============
+  - !MergeEnums
+      from: clkgen::vals::Stop(rc|xt)
+      to: clkgen::vals::Stoposc
+
+  # ============ CTIMER clear control ============
+  - !MergeEnums
+      from: ctimer::vals::(Clear|Tmrclr)
+      to: ctimer::vals::Clear
+
+  # ============ MSPI edge-select ============
+  - !MergeEnums
+      from: mspi::vals::(Rxneg|Txneg)
+      to: mspi::vals::Negedge
+
+  # ============ PDM PGA gain ============
+  - !MergeEnums
+      from: pdm::vals::Pga(left|right)
+      to: pdm::vals::Pgagain

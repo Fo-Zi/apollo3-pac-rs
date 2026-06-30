@@ -743,13 +743,13 @@ impl Dmacfg {
     #[doc = "Direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn dmadir(&self) -> super::vals::Dmadir {
+    pub const fn dmadir(&self) -> super::super::shared::Dmadir {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Dmadir::from_bits(val as u8)
+        super::super::shared::Dmadir::from_bits(val as u8)
     }
     #[doc = "Direction."]
     #[inline(always)]
-    pub const fn set_dmadir(&mut self, val: super::vals::Dmadir) {
+    pub const fn set_dmadir(&mut self, val: super::super::shared::Dmadir) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Sets the Priority of the DMA request."]
@@ -1938,25 +1938,25 @@ impl Mspicfg {
     #[doc = "Adjusts the RX capture phase to the negedge of the 48MHz internal clock (~10ns early). For normal operation, it is expected that RXNEG will be set to 0."]
     #[must_use]
     #[inline(always)]
-    pub const fn rxneg(&self) -> super::vals::Rxneg {
+    pub const fn rxneg(&self) -> super::vals::Negedge {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Rxneg::from_bits(val as u8)
+        super::vals::Negedge::from_bits(val as u8)
     }
     #[doc = "Adjusts the RX capture phase to the negedge of the 48MHz internal clock (~10ns early). For normal operation, it is expected that RXNEG will be set to 0."]
     #[inline(always)]
-    pub const fn set_rxneg(&mut self, val: super::vals::Rxneg) {
+    pub const fn set_rxneg(&mut self, val: super::vals::Negedge) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Launches TX data a half clock cycle (~10ns) early. This should normally be programmed to zero (NORMAL)."]
     #[must_use]
     #[inline(always)]
-    pub const fn txneg(&self) -> super::vals::Txneg {
+    pub const fn txneg(&self) -> super::vals::Negedge {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Txneg::from_bits(val as u8)
+        super::vals::Negedge::from_bits(val as u8)
     }
     #[doc = "Launches TX data a half clock cycle (~10ns) early. This should normally be programmed to zero (NORMAL)."]
     #[inline(always)]
-    pub const fn set_txneg(&mut self, val: super::vals::Txneg) {
+    pub const fn set_txneg(&mut self, val: super::vals::Negedge) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "Selects which IOM is selected for CQ handshake status."]

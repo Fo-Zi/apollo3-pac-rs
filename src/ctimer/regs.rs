@@ -30,13 +30,13 @@ impl Aux0 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0nosync(&self) -> super::vals::Tmra0nosync {
+    pub const fn tmra0nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra0nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra0nosync(&mut self, val: super::vals::Tmra0nosync) {
+    pub const fn set_tmra0nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A0 Invert on trigger."]
@@ -54,25 +54,25 @@ impl Aux0 {
     #[doc = "Counter/Timer A0 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0pol23(&self) -> super::vals::Tmra0pol23 {
+    pub const fn tmra0pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra0pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra0pol23(&mut self, val: super::vals::Tmra0pol23) {
+    pub const fn set_tmra0pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A0 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0en23(&self) -> super::vals::Tmra0en23 {
+    pub const fn tmra0en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra0en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra0en23(&mut self, val: super::vals::Tmra0en23) {
+    pub const fn set_tmra0en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B0 Pattern Limit Count."]
@@ -102,13 +102,13 @@ impl Aux0 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0nosync(&self) -> super::vals::Tmrb0nosync {
+    pub const fn tmrb0nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb0nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb0nosync(&mut self, val: super::vals::Tmrb0nosync) {
+    pub const fn set_tmrb0nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B0 Invert on trigger."]
@@ -126,25 +126,25 @@ impl Aux0 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0pol23(&self) -> super::vals::Tmrb0pol23 {
+    pub const fn tmrb0pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb0pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb0pol23(&mut self, val: super::vals::Tmrb0pol23) {
+    pub const fn set_tmrb0pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B0 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0en23(&self) -> super::vals::Tmrb0en23 {
+    pub const fn tmrb0en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb0en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B0 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb0en23(&mut self, val: super::vals::Tmrb0en23) {
+    pub const fn set_tmrb0en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -210,13 +210,13 @@ impl Aux1 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1nosync(&self) -> super::vals::Tmra1nosync {
+    pub const fn tmra1nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra1nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra1nosync(&mut self, val: super::vals::Tmra1nosync) {
+    pub const fn set_tmra1nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A1 Invert on trigger."]
@@ -234,25 +234,25 @@ impl Aux1 {
     #[doc = "Counter/Timer A1 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1pol23(&self) -> super::vals::Tmra1pol23 {
+    pub const fn tmra1pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra1pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra1pol23(&mut self, val: super::vals::Tmra1pol23) {
+    pub const fn set_tmra1pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A1 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1en23(&self) -> super::vals::Tmra1en23 {
+    pub const fn tmra1en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra1en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra1en23(&mut self, val: super::vals::Tmra1en23) {
+    pub const fn set_tmra1en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B1 Pattern Limit Count."]
@@ -282,13 +282,13 @@ impl Aux1 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1nosync(&self) -> super::vals::Tmrb1nosync {
+    pub const fn tmrb1nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb1nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb1nosync(&mut self, val: super::vals::Tmrb1nosync) {
+    pub const fn set_tmrb1nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B1 Invert on trigger."]
@@ -306,25 +306,25 @@ impl Aux1 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1pol23(&self) -> super::vals::Tmrb1pol23 {
+    pub const fn tmrb1pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb1pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb1pol23(&mut self, val: super::vals::Tmrb1pol23) {
+    pub const fn set_tmrb1pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B1 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1en23(&self) -> super::vals::Tmrb1en23 {
+    pub const fn tmrb1en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb1en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B1 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb1en23(&mut self, val: super::vals::Tmrb1en23) {
+    pub const fn set_tmrb1en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -390,13 +390,13 @@ impl Aux2 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2nosync(&self) -> super::vals::Tmra2nosync {
+    pub const fn tmra2nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra2nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra2nosync(&mut self, val: super::vals::Tmra2nosync) {
+    pub const fn set_tmra2nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A2 Invert on trigger."]
@@ -414,25 +414,25 @@ impl Aux2 {
     #[doc = "Counter/Timer A2 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2pol23(&self) -> super::vals::Tmra2pol23 {
+    pub const fn tmra2pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra2pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra2pol23(&mut self, val: super::vals::Tmra2pol23) {
+    pub const fn set_tmra2pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A2 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2en23(&self) -> super::vals::Tmra2en23 {
+    pub const fn tmra2en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra2en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra2en23(&mut self, val: super::vals::Tmra2en23) {
+    pub const fn set_tmra2en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B2 Pattern Limit Count."]
@@ -462,13 +462,13 @@ impl Aux2 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2nosync(&self) -> super::vals::Tmrb2nosync {
+    pub const fn tmrb2nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb2nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb2nosync(&mut self, val: super::vals::Tmrb2nosync) {
+    pub const fn set_tmrb2nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B2 Invert on trigger."]
@@ -486,25 +486,25 @@ impl Aux2 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2pol23(&self) -> super::vals::Tmrb2pol23 {
+    pub const fn tmrb2pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb2pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb2pol23(&mut self, val: super::vals::Tmrb2pol23) {
+    pub const fn set_tmrb2pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B2 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2en23(&self) -> super::vals::Tmrb2en23 {
+    pub const fn tmrb2en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb2en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B2 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb2en23(&mut self, val: super::vals::Tmrb2en23) {
+    pub const fn set_tmrb2en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -570,13 +570,13 @@ impl Aux3 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3nosync(&self) -> super::vals::Tmra3nosync {
+    pub const fn tmra3nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra3nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra3nosync(&mut self, val: super::vals::Tmra3nosync) {
+    pub const fn set_tmra3nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A3 Invert on trigger."]
@@ -594,25 +594,25 @@ impl Aux3 {
     #[doc = "Counter/Timer A3 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3pol23(&self) -> super::vals::Tmra3pol23 {
+    pub const fn tmra3pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra3pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra3pol23(&mut self, val: super::vals::Tmra3pol23) {
+    pub const fn set_tmra3pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A3 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3en23(&self) -> super::vals::Tmra3en23 {
+    pub const fn tmra3en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra3en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra3en23(&mut self, val: super::vals::Tmra3en23) {
+    pub const fn set_tmra3en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B3 Pattern Limit Count."]
@@ -642,13 +642,13 @@ impl Aux3 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3nosync(&self) -> super::vals::Tmrb3nosync {
+    pub const fn tmrb3nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb3nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb3nosync(&mut self, val: super::vals::Tmrb3nosync) {
+    pub const fn set_tmrb3nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B3 Invert on trigger."]
@@ -666,25 +666,25 @@ impl Aux3 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3pol23(&self) -> super::vals::Tmrb3pol23 {
+    pub const fn tmrb3pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb3pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb3pol23(&mut self, val: super::vals::Tmrb3pol23) {
+    pub const fn set_tmrb3pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B3 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3en23(&self) -> super::vals::Tmrb3en23 {
+    pub const fn tmrb3en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb3en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B3 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb3en23(&mut self, val: super::vals::Tmrb3en23) {
+    pub const fn set_tmrb3en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -750,13 +750,13 @@ impl Aux4 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4nosync(&self) -> super::vals::Tmra4nosync {
+    pub const fn tmra4nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra4nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra4nosync(&mut self, val: super::vals::Tmra4nosync) {
+    pub const fn set_tmra4nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A4 Invert on trigger."]
@@ -774,25 +774,25 @@ impl Aux4 {
     #[doc = "Counter/Timer A4 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4pol23(&self) -> super::vals::Tmra4pol23 {
+    pub const fn tmra4pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra4pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra4pol23(&mut self, val: super::vals::Tmra4pol23) {
+    pub const fn set_tmra4pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A4 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4en23(&self) -> super::vals::Tmra4en23 {
+    pub const fn tmra4en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra4en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra4en23(&mut self, val: super::vals::Tmra4en23) {
+    pub const fn set_tmra4en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B4 Pattern Limit Count."]
@@ -822,13 +822,13 @@ impl Aux4 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4nosync(&self) -> super::vals::Tmrb4nosync {
+    pub const fn tmrb4nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb4nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb4nosync(&mut self, val: super::vals::Tmrb4nosync) {
+    pub const fn set_tmrb4nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B4 Invert on trigger."]
@@ -846,25 +846,25 @@ impl Aux4 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4pol23(&self) -> super::vals::Tmrb4pol23 {
+    pub const fn tmrb4pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb4pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb4pol23(&mut self, val: super::vals::Tmrb4pol23) {
+    pub const fn set_tmrb4pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B4 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4en23(&self) -> super::vals::Tmrb4en23 {
+    pub const fn tmrb4en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb4en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B4 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb4en23(&mut self, val: super::vals::Tmrb4en23) {
+    pub const fn set_tmrb4en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -930,13 +930,13 @@ impl Aux5 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5nosync(&self) -> super::vals::Tmra5nosync {
+    pub const fn tmra5nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra5nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra5nosync(&mut self, val: super::vals::Tmra5nosync) {
+    pub const fn set_tmra5nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A5 Invert on trigger."]
@@ -954,25 +954,25 @@ impl Aux5 {
     #[doc = "Counter/Timer A5 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5pol23(&self) -> super::vals::Tmra5pol23 {
+    pub const fn tmra5pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra5pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra5pol23(&mut self, val: super::vals::Tmra5pol23) {
+    pub const fn set_tmra5pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A5 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5en23(&self) -> super::vals::Tmra5en23 {
+    pub const fn tmra5en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra5en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra5en23(&mut self, val: super::vals::Tmra5en23) {
+    pub const fn set_tmra5en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B5 Pattern Limit Count."]
@@ -1002,13 +1002,13 @@ impl Aux5 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5nosync(&self) -> super::vals::Tmrb5nosync {
+    pub const fn tmrb5nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb5nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb5nosync(&mut self, val: super::vals::Tmrb5nosync) {
+    pub const fn set_tmrb5nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B5 Invert on trigger."]
@@ -1026,25 +1026,25 @@ impl Aux5 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5pol23(&self) -> super::vals::Tmrb5pol23 {
+    pub const fn tmrb5pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb5pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb5pol23(&mut self, val: super::vals::Tmrb5pol23) {
+    pub const fn set_tmrb5pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B5 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5en23(&self) -> super::vals::Tmrb5en23 {
+    pub const fn tmrb5en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb5en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B5 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb5en23(&mut self, val: super::vals::Tmrb5en23) {
+    pub const fn set_tmrb5en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -1110,13 +1110,13 @@ impl Aux6 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6nosync(&self) -> super::vals::Tmra6nosync {
+    pub const fn tmra6nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra6nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra6nosync(&mut self, val: super::vals::Tmra6nosync) {
+    pub const fn set_tmra6nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A6 Invert on trigger."]
@@ -1134,25 +1134,25 @@ impl Aux6 {
     #[doc = "Counter/Timer A6 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6pol23(&self) -> super::vals::Tmra6pol23 {
+    pub const fn tmra6pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra6pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra6pol23(&mut self, val: super::vals::Tmra6pol23) {
+    pub const fn set_tmra6pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A6 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6en23(&self) -> super::vals::Tmra6en23 {
+    pub const fn tmra6en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra6en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra6en23(&mut self, val: super::vals::Tmra6en23) {
+    pub const fn set_tmra6en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B6 Pattern Limit Count."]
@@ -1182,13 +1182,13 @@ impl Aux6 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6nosync(&self) -> super::vals::Tmrb6nosync {
+    pub const fn tmrb6nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb6nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb6nosync(&mut self, val: super::vals::Tmrb6nosync) {
+    pub const fn set_tmrb6nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B6 Invert on trigger."]
@@ -1206,25 +1206,25 @@ impl Aux6 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6pol23(&self) -> super::vals::Tmrb6pol23 {
+    pub const fn tmrb6pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb6pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb6pol23(&mut self, val: super::vals::Tmrb6pol23) {
+    pub const fn set_tmrb6pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B6 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6en23(&self) -> super::vals::Tmrb6en23 {
+    pub const fn tmrb6en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb6en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B6 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb6en23(&mut self, val: super::vals::Tmrb6en23) {
+    pub const fn set_tmrb6en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -1290,13 +1290,13 @@ impl Aux7 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7nosync(&self) -> super::vals::Tmra7nosync {
+    pub const fn tmra7nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra7nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmra7nosync(&mut self, val: super::vals::Tmra7nosync) {
+    pub const fn set_tmra7nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A7 Invert on trigger."]
@@ -1314,25 +1314,25 @@ impl Aux7 {
     #[doc = "Counter/Timer A7 Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7pol23(&self) -> super::vals::Tmra7pol23 {
+    pub const fn tmra7pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Tmra7pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7 Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmra7pol23(&mut self, val: super::vals::Tmra7pol23) {
+    pub const fn set_tmra7pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Counter/Timer A7 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7en23(&self) -> super::vals::Tmra7en23 {
+    pub const fn tmra7en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Tmra7en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmra7en23(&mut self, val: super::vals::Tmra7en23) {
+    pub const fn set_tmra7en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Counter/Timer B7 Pattern Limit Count."]
@@ -1362,13 +1362,13 @@ impl Aux7 {
     #[doc = "Source clock synchronization control."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7nosync(&self) -> super::vals::Tmrb7nosync {
+    pub const fn tmrb7nosync(&self) -> super::vals::Tmrnosync {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb7nosync::from_bits(val as u8)
+        super::vals::Tmrnosync::from_bits(val as u8)
     }
     #[doc = "Source clock synchronization control."]
     #[inline(always)]
-    pub const fn set_tmrb7nosync(&mut self, val: super::vals::Tmrb7nosync) {
+    pub const fn set_tmrb7nosync(&mut self, val: super::vals::Tmrnosync) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B7 Invert on trigger."]
@@ -1386,25 +1386,25 @@ impl Aux7 {
     #[doc = "Upper output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7pol23(&self) -> super::vals::Tmrb7pol23 {
+    pub const fn tmrb7pol23(&self) -> super::vals::Tmrpol23 {
         let val = (self.0 >> 29usize) & 0x01;
-        super::vals::Tmrb7pol23::from_bits(val as u8)
+        super::vals::Tmrpol23::from_bits(val as u8)
     }
     #[doc = "Upper output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb7pol23(&mut self, val: super::vals::Tmrb7pol23) {
+    pub const fn set_tmrb7pol23(&mut self, val: super::vals::Tmrpol23) {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val.to_bits() as u32) & 0x01) << 29usize);
     }
     #[doc = "Counter/Timer B7 Upper compare enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7en23(&self) -> super::vals::Tmrb7en23 {
+    pub const fn tmrb7en23(&self) -> super::vals::Tmren23 {
         let val = (self.0 >> 30usize) & 0x01;
-        super::vals::Tmrb7en23::from_bits(val as u8)
+        super::vals::Tmren23::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B7 Upper compare enable."]
     #[inline(always)]
-    pub const fn set_tmrb7en23(&mut self, val: super::vals::Tmrb7en23) {
+    pub const fn set_tmrb7en23(&mut self, val: super::vals::Tmren23) {
         self.0 = (self.0 & !(0x01 << 30usize)) | (((val.to_bits() as u32) & 0x01) << 30usize);
     }
 }
@@ -3306,13 +3306,13 @@ impl Ctrl0 {
     #[doc = "Counter/Timer A0 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0fn(&self) -> super::vals::Tmra0fn {
+    pub const fn tmra0fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra0fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra0fn(&mut self, val: super::vals::Tmra0fn) {
+    pub const fn set_tmra0fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A0 Interrupt Enable bit based on COMPR0."]
@@ -3342,25 +3342,25 @@ impl Ctrl0 {
     #[doc = "Counter/Timer A0 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0clr(&self) -> super::vals::Tmra0clr {
+    pub const fn tmra0clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra0clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra0clr(&mut self, val: super::vals::Tmra0clr) {
+    pub const fn set_tmra0clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A0 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra0pol(&self) -> super::vals::Tmra0pol {
+    pub const fn tmra0pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra0pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra0pol(&mut self, val: super::vals::Tmra0pol) {
+    pub const fn set_tmra0pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B0 Enable bit."]
@@ -3390,13 +3390,13 @@ impl Ctrl0 {
     #[doc = "Counter/Timer B0 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0fn(&self) -> super::vals::Tmrb0fn {
+    pub const fn tmrb0fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb0fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B0 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb0fn(&mut self, val: super::vals::Tmrb0fn) {
+    pub const fn set_tmrb0fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B0 Interrupt Enable bit for COMPR0."]
@@ -3426,37 +3426,37 @@ impl Ctrl0 {
     #[doc = "Counter/Timer B0 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0clr(&self) -> super::vals::Tmrb0clr {
+    pub const fn tmrb0clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb0clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B0 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb0clr(&mut self, val: super::vals::Tmrb0clr) {
+    pub const fn set_tmrb0clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B0 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb0pol(&self) -> super::vals::Tmrb0pol {
+    pub const fn tmrb0pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb0pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B0 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb0pol(&mut self, val: super::vals::Tmrb0pol) {
+    pub const fn set_tmrb0pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A0/B0 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink0(&self) -> super::vals::Ctlink0 {
+    pub const fn ctlink0(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink0::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A0/B0 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink0(&mut self, val: super::vals::Ctlink0) {
+    pub const fn set_ctlink0(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -3525,13 +3525,13 @@ impl Ctrl1 {
     #[doc = "Counter/Timer A1 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1fn(&self) -> super::vals::Tmra1fn {
+    pub const fn tmra1fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra1fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra1fn(&mut self, val: super::vals::Tmra1fn) {
+    pub const fn set_tmra1fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A1 Interrupt Enable bit based on COMPR0."]
@@ -3561,25 +3561,25 @@ impl Ctrl1 {
     #[doc = "Counter/Timer A1 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1clr(&self) -> super::vals::Tmra1clr {
+    pub const fn tmra1clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra1clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra1clr(&mut self, val: super::vals::Tmra1clr) {
+    pub const fn set_tmra1clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A1 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra1pol(&self) -> super::vals::Tmra1pol {
+    pub const fn tmra1pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra1pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra1pol(&mut self, val: super::vals::Tmra1pol) {
+    pub const fn set_tmra1pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B1 Enable bit."]
@@ -3609,13 +3609,13 @@ impl Ctrl1 {
     #[doc = "Counter/Timer B1 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1fn(&self) -> super::vals::Tmrb1fn {
+    pub const fn tmrb1fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb1fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B1 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb1fn(&mut self, val: super::vals::Tmrb1fn) {
+    pub const fn set_tmrb1fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B1 Interrupt Enable bit for COMPR0."]
@@ -3645,37 +3645,37 @@ impl Ctrl1 {
     #[doc = "Counter/Timer B1 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1clr(&self) -> super::vals::Tmrb1clr {
+    pub const fn tmrb1clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb1clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B1 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb1clr(&mut self, val: super::vals::Tmrb1clr) {
+    pub const fn set_tmrb1clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B1 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb1pol(&self) -> super::vals::Tmrb1pol {
+    pub const fn tmrb1pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb1pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B1 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb1pol(&mut self, val: super::vals::Tmrb1pol) {
+    pub const fn set_tmrb1pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A1/B1 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink1(&self) -> super::vals::Ctlink1 {
+    pub const fn ctlink1(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink1::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A1/B1 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink1(&mut self, val: super::vals::Ctlink1) {
+    pub const fn set_ctlink1(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -3744,13 +3744,13 @@ impl Ctrl2 {
     #[doc = "Counter/Timer A2 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2fn(&self) -> super::vals::Tmra2fn {
+    pub const fn tmra2fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra2fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra2fn(&mut self, val: super::vals::Tmra2fn) {
+    pub const fn set_tmra2fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A2 Interrupt Enable bit based on COMPR0."]
@@ -3780,25 +3780,25 @@ impl Ctrl2 {
     #[doc = "Counter/Timer A2 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2clr(&self) -> super::vals::Tmra2clr {
+    pub const fn tmra2clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra2clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra2clr(&mut self, val: super::vals::Tmra2clr) {
+    pub const fn set_tmra2clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A2 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra2pol(&self) -> super::vals::Tmra2pol {
+    pub const fn tmra2pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra2pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra2pol(&mut self, val: super::vals::Tmra2pol) {
+    pub const fn set_tmra2pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B2 Enable bit."]
@@ -3828,13 +3828,13 @@ impl Ctrl2 {
     #[doc = "Counter/Timer B2 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2fn(&self) -> super::vals::Tmrb2fn {
+    pub const fn tmrb2fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb2fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B2 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb2fn(&mut self, val: super::vals::Tmrb2fn) {
+    pub const fn set_tmrb2fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B2 Interrupt Enable bit for COMPR0."]
@@ -3864,37 +3864,37 @@ impl Ctrl2 {
     #[doc = "Counter/Timer B2 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2clr(&self) -> super::vals::Tmrb2clr {
+    pub const fn tmrb2clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb2clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B2 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb2clr(&mut self, val: super::vals::Tmrb2clr) {
+    pub const fn set_tmrb2clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B2 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb2pol(&self) -> super::vals::Tmrb2pol {
+    pub const fn tmrb2pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb2pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B2 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb2pol(&mut self, val: super::vals::Tmrb2pol) {
+    pub const fn set_tmrb2pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A2/B2 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink2(&self) -> super::vals::Ctlink2 {
+    pub const fn ctlink2(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink2::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A2/B2 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink2(&mut self, val: super::vals::Ctlink2) {
+    pub const fn set_ctlink2(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -3963,13 +3963,13 @@ impl Ctrl3 {
     #[doc = "Counter/Timer A3 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3fn(&self) -> super::vals::Tmra3fn {
+    pub const fn tmra3fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra3fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra3fn(&mut self, val: super::vals::Tmra3fn) {
+    pub const fn set_tmra3fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A3 Interrupt Enable bit based on COMPR0."]
@@ -3999,25 +3999,25 @@ impl Ctrl3 {
     #[doc = "Counter/Timer A3 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3clr(&self) -> super::vals::Tmra3clr {
+    pub const fn tmra3clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra3clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra3clr(&mut self, val: super::vals::Tmra3clr) {
+    pub const fn set_tmra3clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A3 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra3pol(&self) -> super::vals::Tmra3pol {
+    pub const fn tmra3pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra3pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra3pol(&mut self, val: super::vals::Tmra3pol) {
+    pub const fn set_tmra3pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Special Timer A3 enable for ADC function."]
@@ -4059,13 +4059,13 @@ impl Ctrl3 {
     #[doc = "Counter/Timer B3 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3fn(&self) -> super::vals::Tmrb3fn {
+    pub const fn tmrb3fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb3fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B3 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb3fn(&mut self, val: super::vals::Tmrb3fn) {
+    pub const fn set_tmrb3fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B3 Interrupt Enable bit for COMPR0."]
@@ -4095,37 +4095,37 @@ impl Ctrl3 {
     #[doc = "Counter/Timer B3 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3clr(&self) -> super::vals::Tmrb3clr {
+    pub const fn tmrb3clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb3clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B3 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb3clr(&mut self, val: super::vals::Tmrb3clr) {
+    pub const fn set_tmrb3clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B3 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb3pol(&self) -> super::vals::Tmrb3pol {
+    pub const fn tmrb3pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb3pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B3 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb3pol(&mut self, val: super::vals::Tmrb3pol) {
+    pub const fn set_tmrb3pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A3/B3 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink3(&self) -> super::vals::Ctlink3 {
+    pub const fn ctlink3(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink3::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A3/B3 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink3(&mut self, val: super::vals::Ctlink3) {
+    pub const fn set_ctlink3(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -4195,13 +4195,13 @@ impl Ctrl4 {
     #[doc = "Counter/Timer A4 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4fn(&self) -> super::vals::Tmra4fn {
+    pub const fn tmra4fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra4fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra4fn(&mut self, val: super::vals::Tmra4fn) {
+    pub const fn set_tmra4fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A4 Interrupt Enable bit based on COMPR0."]
@@ -4231,25 +4231,25 @@ impl Ctrl4 {
     #[doc = "Counter/Timer A4 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4clr(&self) -> super::vals::Tmra4clr {
+    pub const fn tmra4clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra4clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra4clr(&mut self, val: super::vals::Tmra4clr) {
+    pub const fn set_tmra4clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A4 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra4pol(&self) -> super::vals::Tmra4pol {
+    pub const fn tmra4pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra4pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra4pol(&mut self, val: super::vals::Tmra4pol) {
+    pub const fn set_tmra4pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B4 Enable bit."]
@@ -4279,13 +4279,13 @@ impl Ctrl4 {
     #[doc = "Counter/Timer B4 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4fn(&self) -> super::vals::Tmrb4fn {
+    pub const fn tmrb4fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb4fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B4 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb4fn(&mut self, val: super::vals::Tmrb4fn) {
+    pub const fn set_tmrb4fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B4 Interrupt Enable bit for COMPR0."]
@@ -4315,37 +4315,37 @@ impl Ctrl4 {
     #[doc = "Counter/Timer B4 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4clr(&self) -> super::vals::Tmrb4clr {
+    pub const fn tmrb4clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb4clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B4 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb4clr(&mut self, val: super::vals::Tmrb4clr) {
+    pub const fn set_tmrb4clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B4 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb4pol(&self) -> super::vals::Tmrb4pol {
+    pub const fn tmrb4pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb4pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B4 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb4pol(&mut self, val: super::vals::Tmrb4pol) {
+    pub const fn set_tmrb4pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A4/B4 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink4(&self) -> super::vals::Ctlink4 {
+    pub const fn ctlink4(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink4::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A4/B4 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink4(&mut self, val: super::vals::Ctlink4) {
+    pub const fn set_ctlink4(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -4414,13 +4414,13 @@ impl Ctrl5 {
     #[doc = "Counter/Timer A5 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5fn(&self) -> super::vals::Tmra5fn {
+    pub const fn tmra5fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra5fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra5fn(&mut self, val: super::vals::Tmra5fn) {
+    pub const fn set_tmra5fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A5 Interrupt Enable bit based on COMPR0."]
@@ -4450,25 +4450,25 @@ impl Ctrl5 {
     #[doc = "Counter/Timer A5 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5clr(&self) -> super::vals::Tmra5clr {
+    pub const fn tmra5clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra5clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra5clr(&mut self, val: super::vals::Tmra5clr) {
+    pub const fn set_tmra5clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A5 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra5pol(&self) -> super::vals::Tmra5pol {
+    pub const fn tmra5pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra5pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra5pol(&mut self, val: super::vals::Tmra5pol) {
+    pub const fn set_tmra5pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B5 Enable bit."]
@@ -4498,13 +4498,13 @@ impl Ctrl5 {
     #[doc = "Counter/Timer B5 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5fn(&self) -> super::vals::Tmrb5fn {
+    pub const fn tmrb5fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb5fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B5 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb5fn(&mut self, val: super::vals::Tmrb5fn) {
+    pub const fn set_tmrb5fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B5 Interrupt Enable bit for COMPR0."]
@@ -4534,37 +4534,37 @@ impl Ctrl5 {
     #[doc = "Counter/Timer B5 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5clr(&self) -> super::vals::Tmrb5clr {
+    pub const fn tmrb5clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb5clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B5 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb5clr(&mut self, val: super::vals::Tmrb5clr) {
+    pub const fn set_tmrb5clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B5 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb5pol(&self) -> super::vals::Tmrb5pol {
+    pub const fn tmrb5pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb5pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B5 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb5pol(&mut self, val: super::vals::Tmrb5pol) {
+    pub const fn set_tmrb5pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A5/B5 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink5(&self) -> super::vals::Ctlink5 {
+    pub const fn ctlink5(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink5::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A5/B5 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink5(&mut self, val: super::vals::Ctlink5) {
+    pub const fn set_ctlink5(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -4633,13 +4633,13 @@ impl Ctrl6 {
     #[doc = "Counter/Timer A6 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6fn(&self) -> super::vals::Tmra6fn {
+    pub const fn tmra6fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra6fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra6fn(&mut self, val: super::vals::Tmra6fn) {
+    pub const fn set_tmra6fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A6 Interrupt Enable bit based on COMPR0."]
@@ -4669,25 +4669,25 @@ impl Ctrl6 {
     #[doc = "Counter/Timer A6 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6clr(&self) -> super::vals::Tmra6clr {
+    pub const fn tmra6clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra6clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra6clr(&mut self, val: super::vals::Tmra6clr) {
+    pub const fn set_tmra6clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A6 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra6pol(&self) -> super::vals::Tmra6pol {
+    pub const fn tmra6pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra6pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra6pol(&mut self, val: super::vals::Tmra6pol) {
+    pub const fn set_tmra6pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B6 Enable bit."]
@@ -4717,13 +4717,13 @@ impl Ctrl6 {
     #[doc = "Counter/Timer B6 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6fn(&self) -> super::vals::Tmrb6fn {
+    pub const fn tmrb6fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb6fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B6 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb6fn(&mut self, val: super::vals::Tmrb6fn) {
+    pub const fn set_tmrb6fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B6 Interrupt Enable bit for COMPR0."]
@@ -4753,37 +4753,37 @@ impl Ctrl6 {
     #[doc = "Counter/Timer B6 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6clr(&self) -> super::vals::Tmrb6clr {
+    pub const fn tmrb6clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb6clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B6 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb6clr(&mut self, val: super::vals::Tmrb6clr) {
+    pub const fn set_tmrb6clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B6 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb6pol(&self) -> super::vals::Tmrb6pol {
+    pub const fn tmrb6pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb6pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B6 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb6pol(&mut self, val: super::vals::Tmrb6pol) {
+    pub const fn set_tmrb6pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A6/B6 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink6(&self) -> super::vals::Ctlink6 {
+    pub const fn ctlink6(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink6::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A6/B6 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink6(&mut self, val: super::vals::Ctlink6) {
+    pub const fn set_ctlink6(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -4852,13 +4852,13 @@ impl Ctrl7 {
     #[doc = "Counter/Timer A7 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7fn(&self) -> super::vals::Tmra7fn {
+    pub const fn tmra7fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 6usize) & 0x07;
-        super::vals::Tmra7fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7 Function Select."]
     #[inline(always)]
-    pub const fn set_tmra7fn(&mut self, val: super::vals::Tmra7fn) {
+    pub const fn set_tmra7fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 6usize)) | (((val.to_bits() as u32) & 0x07) << 6usize);
     }
     #[doc = "Counter/Timer A7 Interrupt Enable bit based on COMPR0."]
@@ -4888,25 +4888,25 @@ impl Ctrl7 {
     #[doc = "Counter/Timer A7 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7clr(&self) -> super::vals::Tmra7clr {
+    pub const fn tmra7clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Tmra7clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmra7clr(&mut self, val: super::vals::Tmra7clr) {
+    pub const fn set_tmra7clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Counter/Timer A7 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmra7pol(&self) -> super::vals::Tmra7pol {
+    pub const fn tmra7pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Tmra7pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7 output polarity."]
     #[inline(always)]
-    pub const fn set_tmra7pol(&mut self, val: super::vals::Tmra7pol) {
+    pub const fn set_tmra7pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Counter/Timer B7 Enable bit."]
@@ -4936,13 +4936,13 @@ impl Ctrl7 {
     #[doc = "Counter/Timer B7 Function Select."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7fn(&self) -> super::vals::Tmrb7fn {
+    pub const fn tmrb7fn(&self) -> super::vals::Tmrfn {
         let val = (self.0 >> 22usize) & 0x07;
-        super::vals::Tmrb7fn::from_bits(val as u8)
+        super::vals::Tmrfn::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B7 Function Select."]
     #[inline(always)]
-    pub const fn set_tmrb7fn(&mut self, val: super::vals::Tmrb7fn) {
+    pub const fn set_tmrb7fn(&mut self, val: super::vals::Tmrfn) {
         self.0 = (self.0 & !(0x07 << 22usize)) | (((val.to_bits() as u32) & 0x07) << 22usize);
     }
     #[doc = "Counter/Timer B7 Interrupt Enable bit for COMPR0."]
@@ -4972,37 +4972,37 @@ impl Ctrl7 {
     #[doc = "Counter/Timer B7 Clear bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7clr(&self) -> super::vals::Tmrb7clr {
+    pub const fn tmrb7clr(&self) -> super::vals::Clear {
         let val = (self.0 >> 27usize) & 0x01;
-        super::vals::Tmrb7clr::from_bits(val as u8)
+        super::vals::Clear::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B7 Clear bit."]
     #[inline(always)]
-    pub const fn set_tmrb7clr(&mut self, val: super::vals::Tmrb7clr) {
+    pub const fn set_tmrb7clr(&mut self, val: super::vals::Clear) {
         self.0 = (self.0 & !(0x01 << 27usize)) | (((val.to_bits() as u32) & 0x01) << 27usize);
     }
     #[doc = "Counter/Timer B7 output polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn tmrb7pol(&self) -> super::vals::Tmrb7pol {
+    pub const fn tmrb7pol(&self) -> super::vals::Tmrpol {
         let val = (self.0 >> 28usize) & 0x01;
-        super::vals::Tmrb7pol::from_bits(val as u8)
+        super::vals::Tmrpol::from_bits(val as u8)
     }
     #[doc = "Counter/Timer B7 output polarity."]
     #[inline(always)]
-    pub const fn set_tmrb7pol(&mut self, val: super::vals::Tmrb7pol) {
+    pub const fn set_tmrb7pol(&mut self, val: super::vals::Tmrpol) {
         self.0 = (self.0 & !(0x01 << 28usize)) | (((val.to_bits() as u32) & 0x01) << 28usize);
     }
     #[doc = "Counter/Timer A7/B7 Link bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ctlink7(&self) -> super::vals::Ctlink7 {
+    pub const fn ctlink7(&self) -> super::vals::Ctlink {
         let val = (self.0 >> 31usize) & 0x01;
-        super::vals::Ctlink7::from_bits(val as u8)
+        super::vals::Ctlink::from_bits(val as u8)
     }
     #[doc = "Counter/Timer A7/B7 Link bit."]
     #[inline(always)]
-    pub const fn set_ctlink7(&mut self, val: super::vals::Ctlink7) {
+    pub const fn set_ctlink7(&mut self, val: super::vals::Ctlink) {
         self.0 = (self.0 & !(0x01 << 31usize)) | (((val.to_bits() as u32) & 0x01) << 31usize);
     }
 }
@@ -5047,193 +5047,193 @@ impl Globen {
     #[doc = "Alternate enable for A0."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena0(&self) -> super::vals::Ena0 {
+    pub const fn ena0(&self) -> super::vals::En {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Ena0::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A0."]
     #[inline(always)]
-    pub const fn set_ena0(&mut self, val: super::vals::Ena0) {
+    pub const fn set_ena0(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "Alternate enable for B0."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb0(&self) -> super::vals::Enb0 {
+    pub const fn enb0(&self) -> super::vals::En {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Enb0::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B0."]
     #[inline(always)]
-    pub const fn set_enb0(&mut self, val: super::vals::Enb0) {
+    pub const fn set_enb0(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Alternate enable for A1."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena1(&self) -> super::vals::Ena1 {
+    pub const fn ena1(&self) -> super::vals::En {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Ena1::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A1."]
     #[inline(always)]
-    pub const fn set_ena1(&mut self, val: super::vals::Ena1) {
+    pub const fn set_ena1(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Alternate enable for B1."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb1(&self) -> super::vals::Enb1 {
+    pub const fn enb1(&self) -> super::vals::En {
         let val = (self.0 >> 3usize) & 0x01;
-        super::vals::Enb1::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B1."]
     #[inline(always)]
-    pub const fn set_enb1(&mut self, val: super::vals::Enb1) {
+    pub const fn set_enb1(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 3usize)) | (((val.to_bits() as u32) & 0x01) << 3usize);
     }
     #[doc = "Alternate enable for A2."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena2(&self) -> super::vals::Ena2 {
+    pub const fn ena2(&self) -> super::vals::En {
         let val = (self.0 >> 4usize) & 0x01;
-        super::vals::Ena2::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A2."]
     #[inline(always)]
-    pub const fn set_ena2(&mut self, val: super::vals::Ena2) {
+    pub const fn set_ena2(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 4usize)) | (((val.to_bits() as u32) & 0x01) << 4usize);
     }
     #[doc = "Alternate enable for B2."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb2(&self) -> super::vals::Enb2 {
+    pub const fn enb2(&self) -> super::vals::En {
         let val = (self.0 >> 5usize) & 0x01;
-        super::vals::Enb2::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B2."]
     #[inline(always)]
-    pub const fn set_enb2(&mut self, val: super::vals::Enb2) {
+    pub const fn set_enb2(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 5usize)) | (((val.to_bits() as u32) & 0x01) << 5usize);
     }
     #[doc = "Alternate enable for A3."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena3(&self) -> super::vals::Ena3 {
+    pub const fn ena3(&self) -> super::vals::En {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Ena3::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A3."]
     #[inline(always)]
-    pub const fn set_ena3(&mut self, val: super::vals::Ena3) {
+    pub const fn set_ena3(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Alternate enable for B3."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb3(&self) -> super::vals::Enb3 {
+    pub const fn enb3(&self) -> super::vals::En {
         let val = (self.0 >> 7usize) & 0x01;
-        super::vals::Enb3::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B3."]
     #[inline(always)]
-    pub const fn set_enb3(&mut self, val: super::vals::Enb3) {
+    pub const fn set_enb3(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 7usize)) | (((val.to_bits() as u32) & 0x01) << 7usize);
     }
     #[doc = "Alternate enable for A4."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena4(&self) -> super::vals::Ena4 {
+    pub const fn ena4(&self) -> super::vals::En {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Ena4::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A4."]
     #[inline(always)]
-    pub const fn set_ena4(&mut self, val: super::vals::Ena4) {
+    pub const fn set_ena4(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Alternate enable for B4."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb4(&self) -> super::vals::Enb4 {
+    pub const fn enb4(&self) -> super::vals::En {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Enb4::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B4."]
     #[inline(always)]
-    pub const fn set_enb4(&mut self, val: super::vals::Enb4) {
+    pub const fn set_enb4(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Alternate enable for A5."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena5(&self) -> super::vals::Ena5 {
+    pub const fn ena5(&self) -> super::vals::En {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Ena5::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A5."]
     #[inline(always)]
-    pub const fn set_ena5(&mut self, val: super::vals::Ena5) {
+    pub const fn set_ena5(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
     #[doc = "Alternate enable for B5."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb5(&self) -> super::vals::Enb5 {
+    pub const fn enb5(&self) -> super::vals::En {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Enb5::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B5."]
     #[inline(always)]
-    pub const fn set_enb5(&mut self, val: super::vals::Enb5) {
+    pub const fn set_enb5(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Alternate enable for A6."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena6(&self) -> super::vals::Ena6 {
+    pub const fn ena6(&self) -> super::vals::En {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Ena6::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A6."]
     #[inline(always)]
-    pub const fn set_ena6(&mut self, val: super::vals::Ena6) {
+    pub const fn set_ena6(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Alternate enable for B6."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb6(&self) -> super::vals::Enb6 {
+    pub const fn enb6(&self) -> super::vals::En {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Enb6::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B6."]
     #[inline(always)]
-    pub const fn set_enb6(&mut self, val: super::vals::Enb6) {
+    pub const fn set_enb6(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "Alternate enable for A7."]
     #[must_use]
     #[inline(always)]
-    pub const fn ena7(&self) -> super::vals::Ena7 {
+    pub const fn ena7(&self) -> super::vals::En {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Ena7::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for A7."]
     #[inline(always)]
-    pub const fn set_ena7(&mut self, val: super::vals::Ena7) {
+    pub const fn set_ena7(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Alternate enable for B7."]
     #[must_use]
     #[inline(always)]
-    pub const fn enb7(&self) -> super::vals::Enb7 {
+    pub const fn enb7(&self) -> super::vals::En {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Enb7::from_bits(val as u8)
+        super::vals::En::from_bits(val as u8)
     }
     #[doc = "Alternate enable for B7."]
     #[inline(always)]
-    pub const fn set_enb7(&mut self, val: super::vals::Enb7) {
+    pub const fn set_enb7(&mut self, val: super::vals::En) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
 }

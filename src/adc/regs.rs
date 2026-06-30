@@ -159,13 +159,13 @@ impl Dmacfg {
     #[doc = "Direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn dmadir(&self) -> super::vals::Dmadir {
+    pub const fn dmadir(&self) -> super::super::shared::Dmadir {
         let val = (self.0 >> 2usize) & 0x01;
-        super::vals::Dmadir::from_bits(val as u8)
+        super::super::shared::Dmadir::from_bits(val as u8)
     }
     #[doc = "Direction."]
     #[inline(always)]
-    pub const fn set_dmadir(&mut self, val: super::vals::Dmadir) {
+    pub const fn set_dmadir(&mut self, val: super::super::shared::Dmadir) {
         self.0 = (self.0 & !(0x01 << 2usize)) | (((val.to_bits() as u32) & 0x01) << 2usize);
     }
     #[doc = "Sets the Priority of the DMA request."]
@@ -1272,37 +1272,37 @@ impl Sl0cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel0(&self) -> super::vals::Chsel0 {
+    pub const fn chsel0(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel0::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel0(&mut self, val: super::vals::Chsel0) {
+    pub const fn set_chsel0(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode0(&self) -> super::vals::Prmode0 {
+    pub const fn prmode0(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode0::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode0(&mut self, val: super::vals::Prmode0) {
+    pub const fn set_prmode0(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel0(&self) -> super::vals::Adsel0 {
+    pub const fn adsel0(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel0::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel0(&mut self, val: super::vals::Adsel0) {
+    pub const fn set_adsel0(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1361,37 +1361,37 @@ impl Sl1cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel1(&self) -> super::vals::Chsel1 {
+    pub const fn chsel1(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel1::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel1(&mut self, val: super::vals::Chsel1) {
+    pub const fn set_chsel1(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode1(&self) -> super::vals::Prmode1 {
+    pub const fn prmode1(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode1::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode1(&mut self, val: super::vals::Prmode1) {
+    pub const fn set_prmode1(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel1(&self) -> super::vals::Adsel1 {
+    pub const fn adsel1(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel1::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel1(&mut self, val: super::vals::Adsel1) {
+    pub const fn set_adsel1(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1450,37 +1450,37 @@ impl Sl2cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel2(&self) -> super::vals::Chsel2 {
+    pub const fn chsel2(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel2::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel2(&mut self, val: super::vals::Chsel2) {
+    pub const fn set_chsel2(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode2(&self) -> super::vals::Prmode2 {
+    pub const fn prmode2(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode2::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode2(&mut self, val: super::vals::Prmode2) {
+    pub const fn set_prmode2(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel2(&self) -> super::vals::Adsel2 {
+    pub const fn adsel2(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel2::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel2(&mut self, val: super::vals::Adsel2) {
+    pub const fn set_adsel2(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1539,37 +1539,37 @@ impl Sl3cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel3(&self) -> super::vals::Chsel3 {
+    pub const fn chsel3(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel3::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel3(&mut self, val: super::vals::Chsel3) {
+    pub const fn set_chsel3(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode3(&self) -> super::vals::Prmode3 {
+    pub const fn prmode3(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode3::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode3(&mut self, val: super::vals::Prmode3) {
+    pub const fn set_prmode3(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel3(&self) -> super::vals::Adsel3 {
+    pub const fn adsel3(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel3::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel3(&mut self, val: super::vals::Adsel3) {
+    pub const fn set_adsel3(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1628,37 +1628,37 @@ impl Sl4cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel4(&self) -> super::vals::Chsel4 {
+    pub const fn chsel4(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel4::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel4(&mut self, val: super::vals::Chsel4) {
+    pub const fn set_chsel4(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode4(&self) -> super::vals::Prmode4 {
+    pub const fn prmode4(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode4::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode4(&mut self, val: super::vals::Prmode4) {
+    pub const fn set_prmode4(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel4(&self) -> super::vals::Adsel4 {
+    pub const fn adsel4(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel4::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel4(&mut self, val: super::vals::Adsel4) {
+    pub const fn set_adsel4(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1717,37 +1717,37 @@ impl Sl5cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel5(&self) -> super::vals::Chsel5 {
+    pub const fn chsel5(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel5::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel5(&mut self, val: super::vals::Chsel5) {
+    pub const fn set_chsel5(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode5(&self) -> super::vals::Prmode5 {
+    pub const fn prmode5(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode5::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode5(&mut self, val: super::vals::Prmode5) {
+    pub const fn set_prmode5(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel5(&self) -> super::vals::Adsel5 {
+    pub const fn adsel5(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel5::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel5(&mut self, val: super::vals::Adsel5) {
+    pub const fn set_adsel5(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1806,37 +1806,37 @@ impl Sl6cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel6(&self) -> super::vals::Chsel6 {
+    pub const fn chsel6(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel6::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel6(&mut self, val: super::vals::Chsel6) {
+    pub const fn set_chsel6(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode6(&self) -> super::vals::Prmode6 {
+    pub const fn prmode6(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode6::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode6(&mut self, val: super::vals::Prmode6) {
+    pub const fn set_prmode6(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel6(&self) -> super::vals::Adsel6 {
+    pub const fn adsel6(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel6::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel6(&mut self, val: super::vals::Adsel6) {
+    pub const fn set_adsel6(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }
@@ -1895,37 +1895,37 @@ impl Sl7cfg {
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn chsel7(&self) -> super::vals::Chsel7 {
+    pub const fn chsel7(&self) -> super::vals::Chsel {
         let val = (self.0 >> 8usize) & 0x0f;
-        super::vals::Chsel7::from_bits(val as u8)
+        super::vals::Chsel::from_bits(val as u8)
     }
     #[doc = "Select one of the 14 channel inputs for this slot."]
     #[inline(always)]
-    pub const fn set_chsel7(&mut self, val: super::vals::Chsel7) {
+    pub const fn set_chsel7(&mut self, val: super::vals::Chsel) {
         self.0 = (self.0 & !(0x0f << 8usize)) | (((val.to_bits() as u32) & 0x0f) << 8usize);
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn prmode7(&self) -> super::vals::Prmode7 {
+    pub const fn prmode7(&self) -> super::vals::Prmode {
         let val = (self.0 >> 16usize) & 0x03;
-        super::vals::Prmode7::from_bits(val as u8)
+        super::vals::Prmode::from_bits(val as u8)
     }
     #[doc = "Set the Precision Mode For Slot."]
     #[inline(always)]
-    pub const fn set_prmode7(&mut self, val: super::vals::Prmode7) {
+    pub const fn set_prmode7(&mut self, val: super::vals::Prmode) {
         self.0 = (self.0 & !(0x03 << 16usize)) | (((val.to_bits() as u32) & 0x03) << 16usize);
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[must_use]
     #[inline(always)]
-    pub const fn adsel7(&self) -> super::vals::Adsel7 {
+    pub const fn adsel7(&self) -> super::vals::Adsel {
         let val = (self.0 >> 24usize) & 0x07;
-        super::vals::Adsel7::from_bits(val as u8)
+        super::vals::Adsel::from_bits(val as u8)
     }
     #[doc = "Select the number of measurements to average in the accumulate divide module for this slot."]
     #[inline(always)]
-    pub const fn set_adsel7(&mut self, val: super::vals::Adsel7) {
+    pub const fn set_adsel7(&mut self, val: super::vals::Adsel) {
         self.0 = (self.0 & !(0x07 << 24usize)) | (((val.to_bits() as u32) & 0x07) << 24usize);
     }
 }

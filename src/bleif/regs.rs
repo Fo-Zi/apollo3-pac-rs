@@ -30,37 +30,37 @@ impl Blecfg {
     #[doc = "WAKE signal override. Controls the source of the WAKE signal to the BLE Core."]
     #[must_use]
     #[inline(always)]
-    pub const fn wakeupctl(&self) -> super::vals::Wakeupctl {
+    pub const fn wakeupctl(&self) -> super::vals::Powerctl {
         let val = (self.0 >> 2usize) & 0x03;
-        super::vals::Wakeupctl::from_bits(val as u8)
+        super::vals::Powerctl::from_bits(val as u8)
     }
     #[doc = "WAKE signal override. Controls the source of the WAKE signal to the BLE Core."]
     #[inline(always)]
-    pub const fn set_wakeupctl(&mut self, val: super::vals::Wakeupctl) {
+    pub const fn set_wakeupctl(&mut self, val: super::vals::Powerctl) {
         self.0 = (self.0 & !(0x03 << 2usize)) | (((val.to_bits() as u32) & 0x03) << 2usize);
     }
     #[doc = "DCDCFLG signal override. The value of this field will be sent to the BLE Core when the PWRSM is off. Otherwise, the value is supplied from internal logic."]
     #[must_use]
     #[inline(always)]
-    pub const fn dcdcflgctl(&self) -> super::vals::Dcdcflgctl {
+    pub const fn dcdcflgctl(&self) -> super::vals::Powerctl {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Dcdcflgctl::from_bits(val as u8)
+        super::vals::Powerctl::from_bits(val as u8)
     }
     #[doc = "DCDCFLG signal override. The value of this field will be sent to the BLE Core when the PWRSM is off. Otherwise, the value is supplied from internal logic."]
     #[inline(always)]
-    pub const fn set_dcdcflgctl(&mut self, val: super::vals::Dcdcflgctl) {
+    pub const fn set_dcdcflgctl(&mut self, val: super::vals::Powerctl) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "BLEH power on request override. The value of this field will be sent to the BLE Core when the PWRSM is off. Otherwise, the value is supplied from internal logic."]
     #[must_use]
     #[inline(always)]
-    pub const fn blehreqctl(&self) -> super::vals::Blehreqctl {
+    pub const fn blehreqctl(&self) -> super::vals::Powerctl {
         let val = (self.0 >> 6usize) & 0x03;
-        super::vals::Blehreqctl::from_bits(val as u8)
+        super::vals::Powerctl::from_bits(val as u8)
     }
     #[doc = "BLEH power on request override. The value of this field will be sent to the BLE Core when the PWRSM is off. Otherwise, the value is supplied from internal logic."]
     #[inline(always)]
-    pub const fn set_blehreqctl(&mut self, val: super::vals::Blehreqctl) {
+    pub const fn set_blehreqctl(&mut self, val: super::vals::Powerctl) {
         self.0 = (self.0 & !(0x03 << 6usize)) | (((val.to_bits() as u32) & 0x03) << 6usize);
     }
     #[doc = "Debug control of BLEIF power state machine. Allows transition into the active state in the BLEIF state without waiting for dcdc req from BLE Core."]
@@ -114,25 +114,25 @@ impl Blecfg {
     #[doc = "Configuration of BLEH isolation control for power related signals."]
     #[must_use]
     #[inline(always)]
-    pub const fn pwrisoctl(&self) -> super::vals::Pwrisoctl {
+    pub const fn pwrisoctl(&self) -> super::vals::Powerctl {
         let val = (self.0 >> 12usize) & 0x03;
-        super::vals::Pwrisoctl::from_bits(val as u8)
+        super::vals::Powerctl::from_bits(val as u8)
     }
     #[doc = "Configuration of BLEH isolation control for power related signals."]
     #[inline(always)]
-    pub const fn set_pwrisoctl(&mut self, val: super::vals::Pwrisoctl) {
+    pub const fn set_pwrisoctl(&mut self, val: super::vals::Powerctl) {
         self.0 = (self.0 & !(0x03 << 12usize)) | (((val.to_bits() as u32) & 0x03) << 12usize);
     }
     #[doc = "Configuration of BLEH isolation controls for SPI related signals."]
     #[must_use]
     #[inline(always)]
-    pub const fn spiisoctl(&self) -> super::vals::Spiisoctl {
+    pub const fn spiisoctl(&self) -> super::vals::Powerctl {
         let val = (self.0 >> 14usize) & 0x03;
-        super::vals::Spiisoctl::from_bits(val as u8)
+        super::vals::Powerctl::from_bits(val as u8)
     }
     #[doc = "Configuration of BLEH isolation controls for SPI related signals."]
     #[inline(always)]
-    pub const fn set_spiisoctl(&mut self, val: super::vals::Spiisoctl) {
+    pub const fn set_spiisoctl(&mut self, val: super::vals::Powerctl) {
         self.0 = (self.0 & !(0x03 << 14usize)) | (((val.to_bits() as u32) & 0x03) << 14usize);
     }
 }
@@ -402,13 +402,13 @@ impl Clkcfg {
     #[doc = "Select the input clock frequency."]
     #[must_use]
     #[inline(always)]
-    pub const fn fsel(&self) -> super::vals::Fsel {
+    pub const fn fsel(&self) -> super::super::shared::Fsel {
         let val = (self.0 >> 8usize) & 0x07;
-        super::vals::Fsel::from_bits(val as u8)
+        super::super::shared::Fsel::from_bits(val as u8)
     }
     #[doc = "Select the input clock frequency."]
     #[inline(always)]
-    pub const fn set_fsel(&mut self, val: super::vals::Fsel) {
+    pub const fn set_fsel(&mut self, val: super::super::shared::Fsel) {
         self.0 = (self.0 & !(0x07 << 8usize)) | (((val.to_bits() as u32) & 0x07) << 8usize);
     }
     #[doc = "Enable for the 32Khz clock to the BLE module."]
@@ -624,13 +624,13 @@ impl Cmdstat {
     #[doc = "The current status of the command execution."]
     #[must_use]
     #[inline(always)]
-    pub const fn cmdstat(&self) -> super::vals::Cmdstat {
+    pub const fn cmdstat(&self) -> super::super::shared::Cmdstat {
         let val = (self.0 >> 5usize) & 0x07;
-        super::vals::Cmdstat::from_bits(val as u8)
+        super::super::shared::Cmdstat::from_bits(val as u8)
     }
     #[doc = "The current status of the command execution."]
     #[inline(always)]
-    pub const fn set_cmdstat(&mut self, val: super::vals::Cmdstat) {
+    pub const fn set_cmdstat(&mut self, val: super::super::shared::Cmdstat) {
         self.0 = (self.0 & !(0x07 << 5usize)) | (((val.to_bits() as u32) & 0x07) << 5usize);
     }
     #[doc = "The current number of bytes still to be transferred with this command. This field will count down to zero."]
@@ -1107,13 +1107,13 @@ impl Dmacfg {
     #[doc = "Direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn dmadir(&self) -> super::vals::Dmadir {
+    pub const fn dmadir(&self) -> super::super::shared::Dmadir {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Dmadir::from_bits(val as u8)
+        super::super::shared::Dmadir::from_bits(val as u8)
     }
     #[doc = "Direction."]
     #[inline(always)]
-    pub const fn set_dmadir(&mut self, val: super::vals::Dmadir) {
+    pub const fn set_dmadir(&mut self, val: super::super::shared::Dmadir) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Sets the Priority of the DMA request."]
@@ -2684,25 +2684,25 @@ impl Mspicfg {
     #[doc = "This bit selects SPI polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn spol(&self) -> super::vals::Spol {
+    pub const fn spol(&self) -> super::super::shared::Spol {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Spol::from_bits(val as u8)
+        super::super::shared::Spol::from_bits(val as u8)
     }
     #[doc = "This bit selects SPI polarity."]
     #[inline(always)]
-    pub const fn set_spol(&mut self, val: super::vals::Spol) {
+    pub const fn set_spol(&mut self, val: super::super::shared::Spol) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "Selects the SPI phase; When 1, will shift the sampling edge by 1/2 clock."]
     #[must_use]
     #[inline(always)]
-    pub const fn spha(&self) -> super::vals::Spha {
+    pub const fn spha(&self) -> super::super::shared::Spha {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Spha::from_bits(val as u8)
+        super::super::shared::Spha::from_bits(val as u8)
     }
     #[doc = "Selects the SPI phase; When 1, will shift the sampling edge by 1/2 clock."]
     #[inline(always)]
-    pub const fn set_spha(&mut self, val: super::vals::Spha) {
+    pub const fn set_spha(&mut self, val: super::super::shared::Spha) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Full Duplex mode. Capture read data during writes operations."]
@@ -2744,37 +2744,37 @@ impl Mspicfg {
     #[doc = "Selects the write flow control signal polarity. The transfers are halted when the selected flow control signal is OPPOSITE polarity of this bit. (For example: WTFCPOL = 0 will allow a SPI_STATUS=1 to pause transfers)."]
     #[must_use]
     #[inline(always)]
-    pub const fn wtfcpol(&self) -> super::vals::Wtfcpol {
+    pub const fn wtfcpol(&self) -> super::vals::Fcpol {
         let val = (self.0 >> 21usize) & 0x01;
-        super::vals::Wtfcpol::from_bits(val as u8)
+        super::vals::Fcpol::from_bits(val as u8)
     }
     #[doc = "Selects the write flow control signal polarity. The transfers are halted when the selected flow control signal is OPPOSITE polarity of this bit. (For example: WTFCPOL = 0 will allow a SPI_STATUS=1 to pause transfers)."]
     #[inline(always)]
-    pub const fn set_wtfcpol(&mut self, val: super::vals::Wtfcpol) {
+    pub const fn set_wtfcpol(&mut self, val: super::vals::Fcpol) {
         self.0 = (self.0 & !(0x01 << 21usize)) | (((val.to_bits() as u32) & 0x01) << 21usize);
     }
     #[doc = "Selects the read flow control signal polarity. When set, the clock will be held low until the flow control is de-asserted."]
     #[must_use]
     #[inline(always)]
-    pub const fn rdfcpol(&self) -> super::vals::Rdfcpol {
+    pub const fn rdfcpol(&self) -> super::vals::Fcpol {
         let val = (self.0 >> 22usize) & 0x01;
-        super::vals::Rdfcpol::from_bits(val as u8)
+        super::vals::Fcpol::from_bits(val as u8)
     }
     #[doc = "Selects the read flow control signal polarity. When set, the clock will be held low until the flow control is de-asserted."]
     #[inline(always)]
-    pub const fn set_rdfcpol(&mut self, val: super::vals::Rdfcpol) {
+    pub const fn set_rdfcpol(&mut self, val: super::vals::Fcpol) {
         self.0 = (self.0 & !(0x01 << 22usize)) | (((val.to_bits() as u32) & 0x01) << 22usize);
     }
     #[doc = "Selects data transfer as MSB first (0) or LSB first (1) for the data portion of the SPI transaction. The offset bytes are always transmitted MSB first."]
     #[must_use]
     #[inline(always)]
-    pub const fn spilsb(&self) -> super::vals::Spilsb {
+    pub const fn spilsb(&self) -> super::super::shared::Spilsb {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Spilsb::from_bits(val as u8)
+        super::super::shared::Spilsb::from_bits(val as u8)
     }
     #[doc = "Selects data transfer as MSB first (0) or LSB first (1) for the data portion of the SPI transaction. The offset bytes are always transmitted MSB first."]
     #[inline(always)]
-    pub const fn set_spilsb(&mut self, val: super::vals::Spilsb) {
+    pub const fn set_spilsb(&mut self, val: super::super::shared::Spilsb) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "Delay tap to use for the input signal (MISO). This gives more hold time on the input data."]

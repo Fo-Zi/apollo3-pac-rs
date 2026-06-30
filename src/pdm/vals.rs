@@ -67,37 +67,6 @@ impl From<Chset> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Dmadir {
-    #[doc = "Peripheral to Memory (SRAM) transaction. THe PDM module will only DMA to memory. value."]
-    P2m = 0x0,
-    #[doc = "Memory to Peripheral transaction. Not available for PDM module value."]
-    M2p = 0x01,
-}
-impl Dmadir {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Dmadir {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Dmadir {
-    #[inline(always)]
-    fn from(val: u8) -> Dmadir {
-        Dmadir::from_bits(val)
-    }
-}
-impl From<Dmadir> for u8 {
-    #[inline(always)]
-    fn from(val: Dmadir) -> u8 {
-        Dmadir::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dmapri {
     #[doc = "Low Priority (service as best effort) value."]
     Low = 0x0,
@@ -269,7 +238,7 @@ impl From<Pdmclksel> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Pgaleft {
+pub enum Pgagain {
     #[doc = "-6.0 db gain. value."]
     M60db = 0x0,
     #[doc = "-4.5 db gain. value."]
@@ -335,9 +304,9 @@ pub enum Pgaleft {
     #[doc = "40.5 db gain. value."]
     P405db = 0x1f,
 }
-impl Pgaleft {
+impl Pgagain {
     #[inline(always)]
-    pub const fn from_bits(val: u8) -> Pgaleft {
+    pub const fn from_bits(val: u8) -> Pgagain {
         unsafe { core::mem::transmute(val & 0x1f) }
     }
     #[inline(always)]
@@ -345,107 +314,16 @@ impl Pgaleft {
         unsafe { core::mem::transmute(self) }
     }
 }
-impl From<u8> for Pgaleft {
+impl From<u8> for Pgagain {
     #[inline(always)]
-    fn from(val: u8) -> Pgaleft {
-        Pgaleft::from_bits(val)
+    fn from(val: u8) -> Pgagain {
+        Pgagain::from_bits(val)
     }
 }
-impl From<Pgaleft> for u8 {
+impl From<Pgagain> for u8 {
     #[inline(always)]
-    fn from(val: Pgaleft) -> u8 {
-        Pgaleft::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Pgaright {
-    #[doc = "-6.0 db gain. value."]
-    M60db = 0x0,
-    #[doc = "-4.5 db gain. value."]
-    M45db = 0x01,
-    #[doc = "-3.0 db gain. value."]
-    M300db = 0x02,
-    #[doc = "-1.5 db gain. value."]
-    M15db = 0x03,
-    #[doc = "0.0 db gain. value."]
-    _0db = 0x04,
-    #[doc = "1.5 db gain. value."]
-    P15db = 0x05,
-    #[doc = "3.0 db gain. value."]
-    P30db = 0x06,
-    #[doc = "4.5 db gain. value."]
-    P45db = 0x07,
-    #[doc = "6.0 db gain. value."]
-    P60db = 0x08,
-    #[doc = "7.5 db gain. value."]
-    P75db = 0x09,
-    #[doc = "9.0 db gain. value."]
-    P90db = 0x0a,
-    #[doc = "10.5 db gain. value."]
-    P105db = 0x0b,
-    #[doc = "12.0 db gain. value."]
-    P120db = 0x0c,
-    #[doc = "13.5 db gain. value."]
-    P135db = 0x0d,
-    #[doc = "15.0 db gain. value."]
-    P150db = 0x0e,
-    #[doc = "16.5 db gain. value."]
-    P165db = 0x0f,
-    #[doc = "18.0 db gain. value."]
-    P180db = 0x10,
-    #[doc = "19.5 db gain. value."]
-    P195db = 0x11,
-    #[doc = "21.0 db gain. value."]
-    P210db = 0x12,
-    #[doc = "22.5 db gain. value."]
-    P225db = 0x13,
-    #[doc = "24.0 db gain. value."]
-    P240db = 0x14,
-    #[doc = "25.5 db gain. value."]
-    P255db = 0x15,
-    #[doc = "27.0 db gain. value."]
-    P270db = 0x16,
-    #[doc = "28.5 db gain. value."]
-    P285db = 0x17,
-    #[doc = "30.0 db gain. value."]
-    P300db = 0x18,
-    #[doc = "31.5 db gain. value."]
-    P315db = 0x19,
-    #[doc = "33.0 db gain. value."]
-    P330db = 0x1a,
-    #[doc = "34.5 db gain. value."]
-    P345db = 0x1b,
-    #[doc = "36.0 db gain. value."]
-    P360db = 0x1c,
-    #[doc = "37.5 db gain. value."]
-    P375db = 0x1d,
-    #[doc = "39.0 db gain. value."]
-    P390db = 0x1e,
-    #[doc = "40.5 db gain. value."]
-    P405db = 0x1f,
-}
-impl Pgaright {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Pgaright {
-        unsafe { core::mem::transmute(val & 0x1f) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Pgaright {
-    #[inline(always)]
-    fn from(val: u8) -> Pgaright {
-        Pgaright::from_bits(val)
-    }
-}
-impl From<Pgaright> for u8 {
-    #[inline(always)]
-    fn from(val: Pgaright) -> u8 {
-        Pgaright::to_bits(val)
+    fn from(val: Pgagain) -> u8 {
+        Pgagain::to_bits(val)
     }
 }
 #[repr(u8)]

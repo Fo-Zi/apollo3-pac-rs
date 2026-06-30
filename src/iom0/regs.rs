@@ -18,13 +18,13 @@ impl Clkcfg {
     #[doc = "Select the input clock frequency."]
     #[must_use]
     #[inline(always)]
-    pub const fn fsel(&self) -> super::vals::Fsel {
+    pub const fn fsel(&self) -> super::super::shared::Fsel {
         let val = (self.0 >> 8usize) & 0x07;
-        super::vals::Fsel::from_bits(val as u8)
+        super::super::shared::Fsel::from_bits(val as u8)
     }
     #[doc = "Select the input clock frequency."]
     #[inline(always)]
-    pub const fn set_fsel(&mut self, val: super::vals::Fsel) {
+    pub const fn set_fsel(&mut self, val: super::super::shared::Fsel) {
         self.0 = (self.0 & !(0x07 << 8usize)) | (((val.to_bits() as u32) & 0x07) << 8usize);
     }
     #[doc = "Enable divide by 3 of the source IOCLK. Division by 3 is done before the DIVEN programmable divider, and if enabled will provide the divided by 3 clock as the source to the programmable divider."]
@@ -222,13 +222,13 @@ impl Cmdstat {
     #[doc = "The current status of the command execution."]
     #[must_use]
     #[inline(always)]
-    pub const fn cmdstat(&self) -> super::vals::Cmdstat {
+    pub const fn cmdstat(&self) -> super::super::shared::Cmdstat {
         let val = (self.0 >> 5usize) & 0x07;
-        super::vals::Cmdstat::from_bits(val as u8)
+        super::super::shared::Cmdstat::from_bits(val as u8)
     }
     #[doc = "The current status of the command execution."]
     #[inline(always)]
-    pub const fn set_cmdstat(&mut self, val: super::vals::Cmdstat) {
+    pub const fn set_cmdstat(&mut self, val: super::super::shared::Cmdstat) {
         self.0 = (self.0 & !(0x07 << 5usize)) | (((val.to_bits() as u32) & 0x07) << 5usize);
     }
     #[doc = "The current number of bytes still to be transferred with this command. This field will count down to zero."]
@@ -831,13 +831,13 @@ impl Dmacfg {
     #[doc = "Direction."]
     #[must_use]
     #[inline(always)]
-    pub const fn dmadir(&self) -> super::vals::Dmadir {
+    pub const fn dmadir(&self) -> super::super::shared::Dmadir {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Dmadir::from_bits(val as u8)
+        super::super::shared::Dmadir::from_bits(val as u8)
     }
     #[doc = "Direction."]
     #[inline(always)]
-    pub const fn set_dmadir(&mut self, val: super::vals::Dmadir) {
+    pub const fn set_dmadir(&mut self, val: super::super::shared::Dmadir) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Sets the Priority of the DMA request."]
@@ -2521,25 +2521,25 @@ impl Mspicfg {
     #[doc = "selects SPI polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn spol(&self) -> super::vals::Spol {
+    pub const fn spol(&self) -> super::super::shared::Spol {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Spol::from_bits(val as u8)
+        super::super::shared::Spol::from_bits(val as u8)
     }
     #[doc = "selects SPI polarity."]
     #[inline(always)]
-    pub const fn set_spol(&mut self, val: super::vals::Spol) {
+    pub const fn set_spol(&mut self, val: super::super::shared::Spol) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "selects SPI phase."]
     #[must_use]
     #[inline(always)]
-    pub const fn spha(&self) -> super::vals::Spha {
+    pub const fn spha(&self) -> super::super::shared::Spha {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Spha::from_bits(val as u8)
+        super::super::shared::Spha::from_bits(val as u8)
     }
     #[doc = "selects SPI phase."]
     #[inline(always)]
-    pub const fn set_spha(&mut self, val: super::vals::Spha) {
+    pub const fn set_spha(&mut self, val: super::super::shared::Spha) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Enables full duplex mode for Master SPI write operations. Data will be captured simultaneously into the read fifo."]
@@ -2605,37 +2605,37 @@ impl Mspicfg {
     #[doc = "selects the write flow control signal polarity. The transfers are halted when the selected flow control signal is OPPOSITE polarity of bit. (For example: WTFCPOL = 0 will allow a IRQ=1 to pause transfers)."]
     #[must_use]
     #[inline(always)]
-    pub const fn wtfcpol(&self) -> super::vals::Wtfcpol {
+    pub const fn wtfcpol(&self) -> super::vals::Fcpol {
         let val = (self.0 >> 21usize) & 0x01;
-        super::vals::Wtfcpol::from_bits(val as u8)
+        super::vals::Fcpol::from_bits(val as u8)
     }
     #[doc = "selects the write flow control signal polarity. The transfers are halted when the selected flow control signal is OPPOSITE polarity of bit. (For example: WTFCPOL = 0 will allow a IRQ=1 to pause transfers)."]
     #[inline(always)]
-    pub const fn set_wtfcpol(&mut self, val: super::vals::Wtfcpol) {
+    pub const fn set_wtfcpol(&mut self, val: super::vals::Fcpol) {
         self.0 = (self.0 & !(0x01 << 21usize)) | (((val.to_bits() as u32) & 0x01) << 21usize);
     }
     #[doc = "selects the read flow control signal polarity."]
     #[must_use]
     #[inline(always)]
-    pub const fn rdfcpol(&self) -> super::vals::Rdfcpol {
+    pub const fn rdfcpol(&self) -> super::vals::Fcpol {
         let val = (self.0 >> 22usize) & 0x01;
-        super::vals::Rdfcpol::from_bits(val as u8)
+        super::vals::Fcpol::from_bits(val as u8)
     }
     #[doc = "selects the read flow control signal polarity."]
     #[inline(always)]
-    pub const fn set_rdfcpol(&mut self, val: super::vals::Rdfcpol) {
+    pub const fn set_rdfcpol(&mut self, val: super::vals::Fcpol) {
         self.0 = (self.0 & !(0x01 << 22usize)) | (((val.to_bits() as u32) & 0x01) << 22usize);
     }
     #[doc = "Selects data transfer as MSB first (0) or LSB first (1) for the data portion of the SPI transaction. The offset bytes are always transmitted MSB first."]
     #[must_use]
     #[inline(always)]
-    pub const fn spilsb(&self) -> super::vals::Spilsb {
+    pub const fn spilsb(&self) -> super::super::shared::Spilsb {
         let val = (self.0 >> 23usize) & 0x01;
-        super::vals::Spilsb::from_bits(val as u8)
+        super::super::shared::Spilsb::from_bits(val as u8)
     }
     #[doc = "Selects data transfer as MSB first (0) or LSB first (1) for the data portion of the SPI transaction. The offset bytes are always transmitted MSB first."]
     #[inline(always)]
-    pub const fn set_spilsb(&mut self, val: super::vals::Spilsb) {
+    pub const fn set_spilsb(&mut self, val: super::super::shared::Spilsb) {
         self.0 = (self.0 & !(0x01 << 23usize)) | (((val.to_bits() as u32) & 0x01) << 23usize);
     }
     #[doc = "Delay tap to use for the input signal (MISO). This gives more hold time on the input data."]

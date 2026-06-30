@@ -561,7 +561,7 @@ impl From<Revmin> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Secboot {
+pub enum Secbootstatus {
     #[doc = "Secure boot disabled value."]
     Disabled = 0x0,
     #[doc = "Secure boot enabled value."]
@@ -570,9 +570,9 @@ pub enum Secboot {
     Error = 0x02,
     _RESERVED_3 = 0x03,
 }
-impl Secboot {
+impl Secbootstatus {
     #[inline(always)]
-    pub const fn from_bits(val: u8) -> Secboot {
+    pub const fn from_bits(val: u8) -> Secbootstatus {
         unsafe { core::mem::transmute(val & 0x03) }
     }
     #[inline(always)]
@@ -580,84 +580,16 @@ impl Secboot {
         unsafe { core::mem::transmute(self) }
     }
 }
-impl From<u8> for Secboot {
+impl From<u8> for Secbootstatus {
     #[inline(always)]
-    fn from(val: u8) -> Secboot {
-        Secboot::from_bits(val)
+    fn from(val: u8) -> Secbootstatus {
+        Secbootstatus::from_bits(val)
     }
 }
-impl From<Secboot> for u8 {
+impl From<Secbootstatus> for u8 {
     #[inline(always)]
-    fn from(val: Secboot) -> u8 {
-        Secboot::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Secbootfeature {
-    #[doc = "Secure boot disabled value."]
-    Disabled = 0x0,
-    #[doc = "Secure boot enabled value."]
-    Enabled = 0x01,
-    #[doc = "Error in secure boot configuration value."]
-    Error = 0x02,
-    _RESERVED_3 = 0x03,
-}
-impl Secbootfeature {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Secbootfeature {
-        unsafe { core::mem::transmute(val & 0x03) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Secbootfeature {
-    #[inline(always)]
-    fn from(val: u8) -> Secbootfeature {
-        Secbootfeature::from_bits(val)
-    }
-}
-impl From<Secbootfeature> for u8 {
-    #[inline(always)]
-    fn from(val: Secbootfeature) -> u8 {
-        Secbootfeature::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Secbootonrst {
-    #[doc = "Secure boot disabled value."]
-    Disabled = 0x0,
-    #[doc = "Secure boot enabled value."]
-    Enabled = 0x01,
-    #[doc = "Error in secure boot configuration value."]
-    Error = 0x02,
-    _RESERVED_3 = 0x03,
-}
-impl Secbootonrst {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Secbootonrst {
-        unsafe { core::mem::transmute(val & 0x03) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Secbootonrst {
-    #[inline(always)]
-    fn from(val: u8) -> Secbootonrst {
-        Secbootonrst::from_bits(val)
-    }
-}
-impl From<Secbootonrst> for u8 {
-    #[inline(always)]
-    fn from(val: Secbootonrst) -> u8 {
-        Secbootonrst::to_bits(val)
+    fn from(val: Secbootstatus) -> u8 {
+        Secbootstatus::to_bits(val)
     }
 }
 #[repr(transparent)]

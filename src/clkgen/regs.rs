@@ -905,25 +905,25 @@ impl Octrl {
     #[doc = "Stop the XT Oscillator to the RTC."]
     #[must_use]
     #[inline(always)]
-    pub const fn stopxt(&self) -> super::vals::Stopxt {
+    pub const fn stopxt(&self) -> super::vals::Stoposc {
         let val = (self.0 >> 0usize) & 0x01;
-        super::vals::Stopxt::from_bits(val as u8)
+        super::vals::Stoposc::from_bits(val as u8)
     }
     #[doc = "Stop the XT Oscillator to the RTC."]
     #[inline(always)]
-    pub const fn set_stopxt(&mut self, val: super::vals::Stopxt) {
+    pub const fn set_stopxt(&mut self, val: super::vals::Stoposc) {
         self.0 = (self.0 & !(0x01 << 0usize)) | (((val.to_bits() as u32) & 0x01) << 0usize);
     }
     #[doc = "Stop the LFRC Oscillator to the RTC."]
     #[must_use]
     #[inline(always)]
-    pub const fn stoprc(&self) -> super::vals::Stoprc {
+    pub const fn stoprc(&self) -> super::vals::Stoposc {
         let val = (self.0 >> 1usize) & 0x01;
-        super::vals::Stoprc::from_bits(val as u8)
+        super::vals::Stoposc::from_bits(val as u8)
     }
     #[doc = "Stop the LFRC Oscillator to the RTC."]
     #[inline(always)]
-    pub const fn set_stoprc(&mut self, val: super::vals::Stoprc) {
+    pub const fn set_stoprc(&mut self, val: super::vals::Stoposc) {
         self.0 = (self.0 & !(0x01 << 1usize)) | (((val.to_bits() as u32) & 0x01) << 1usize);
     }
     #[doc = "Oscillator switch on failure function. If this is set, then LFRC clock source will switch from XT to RC."]

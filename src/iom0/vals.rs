@@ -123,45 +123,6 @@ impl From<Cmd> for u8 {
         Cmd::to_bits(val)
     }
 }
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Cmdstat {
-    _RESERVED_0 = 0x0,
-    #[doc = "Error encountered with command value."]
-    Err = 0x01,
-    #[doc = "Actively processing command value."]
-    Active = 0x02,
-    _RESERVED_3 = 0x03,
-    #[doc = "Idle state, no active command, no error value."]
-    Idle = 0x04,
-    _RESERVED_5 = 0x05,
-    #[doc = "Command in progress, but waiting on data from host value."]
-    Wait = 0x06,
-    _RESERVED_7 = 0x07,
-}
-impl Cmdstat {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Cmdstat {
-        unsafe { core::mem::transmute(val & 0x07) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Cmdstat {
-    #[inline(always)]
-    fn from(val: u8) -> Cmdstat {
-        Cmdstat::from_bits(val)
-    }
-}
-impl From<Cmdstat> for u8 {
-    #[inline(always)]
-    fn from(val: Cmdstat) -> u8 {
-        Cmdstat::to_bits(val)
-    }
-}
 #[repr(transparent)]
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
 pub struct Cqpen(u16);
@@ -300,37 +261,6 @@ impl From<Cqpri> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Dmadir {
-    #[doc = "Peripheral to Memory (SRAM) transaction. To be set when doing IOM read operations, ie reading data from external devices. value."]
-    P2m = 0x0,
-    #[doc = "Memory to Peripheral transaction. To be set when doing IOM write operations, ie writing data to external devices. value."]
-    M2p = 0x01,
-}
-impl Dmadir {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Dmadir {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Dmadir {
-    #[inline(always)]
-    fn from(val: u8) -> Dmadir {
-        Dmadir::from_bits(val)
-    }
-}
-impl From<Dmadir> for u8 {
-    #[inline(always)]
-    fn from(val: Dmadir) -> u8 {
-        Dmadir::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dmapri {
     #[doc = "Low Priority (service as best effort) value."]
     Low = 0x0,
@@ -362,44 +292,32 @@ impl From<Dmapri> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Fsel {
-    #[doc = "Selects the minimum power clock. This setting should be used whenever the IOM is not active. value."]
-    MinPwr = 0x0,
-    #[doc = "Selects the HFRC as the input clock. value."]
-    Hfrc = 0x01,
-    #[doc = "Selects the HFRC / 2 as the input clock. value."]
-    HfrcDiv2 = 0x02,
-    #[doc = "Selects the HFRC / 4 as the input clock. value."]
-    HfrcDiv4 = 0x03,
-    #[doc = "Selects the HFRC / 8 as the input clock. value."]
-    HfrcDiv8 = 0x04,
-    #[doc = "Selects the HFRC / 16 as the input clock. value."]
-    HfrcDiv16 = 0x05,
-    #[doc = "Selects the HFRC / 32 as the input clock. value."]
-    HfrcDiv32 = 0x06,
-    #[doc = "Selects the HFRC / 64 as the input clock. value."]
-    HfrcDiv64 = 0x07,
+pub enum Fcpol {
+    #[doc = "Flow control signal high creates flow control. value."]
+    High = 0x0,
+    #[doc = "Flow control signal low creates flow control. value."]
+    Low = 0x01,
 }
-impl Fsel {
+impl Fcpol {
     #[inline(always)]
-    pub const fn from_bits(val: u8) -> Fsel {
-        unsafe { core::mem::transmute(val & 0x07) }
+    pub const fn from_bits(val: u8) -> Fcpol {
+        unsafe { core::mem::transmute(val & 0x01) }
     }
     #[inline(always)]
     pub const fn to_bits(self) -> u8 {
         unsafe { core::mem::transmute(self) }
     }
 }
-impl From<u8> for Fsel {
+impl From<u8> for Fcpol {
     #[inline(always)]
-    fn from(val: u8) -> Fsel {
-        Fsel::from_bits(val)
+    fn from(val: u8) -> Fcpol {
+        Fcpol::from_bits(val)
     }
 }
-impl From<Fsel> for u8 {
+impl From<Fcpol> for u8 {
     #[inline(always)]
-    fn from(val: Fsel) -> u8 {
-        Fsel::to_bits(val)
+    fn from(val: Fcpol) -> u8 {
+        Fcpol::to_bits(val)
     }
 }
 #[repr(u8)]
@@ -462,37 +380,6 @@ impl From<Mosiinv> for u8 {
     #[inline(always)]
     fn from(val: Mosiinv) -> u8 {
         Mosiinv::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Rdfcpol {
-    #[doc = "Flow control signal high creates flow control. value."]
-    High = 0x0,
-    #[doc = "Flow control signal low creates flow control. value."]
-    Low = 0x01,
-}
-impl Rdfcpol {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Rdfcpol {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Rdfcpol {
-    #[inline(always)]
-    fn from(val: u8) -> Rdfcpol {
-        Rdfcpol::from_bits(val)
-    }
-}
-impl From<Rdfcpol> for u8 {
-    #[inline(always)]
-    fn from(val: Rdfcpol) -> u8 {
-        Rdfcpol::to_bits(val)
     }
 }
 #[repr(u8)]
@@ -578,99 +465,6 @@ impl From<Smod1type> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Spha {
-    #[doc = "Sample on the leading (first) clock edge. value."]
-    SampleLeadingEdge = 0x0,
-    #[doc = "Sample on the trailing (second) clock edge. value."]
-    SampleTrailingEdge = 0x01,
-}
-impl Spha {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Spha {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Spha {
-    #[inline(always)]
-    fn from(val: u8) -> Spha {
-        Spha::from_bits(val)
-    }
-}
-impl From<Spha> for u8 {
-    #[inline(always)]
-    fn from(val: Spha) -> u8 {
-        Spha::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Spilsb {
-    #[doc = "Send and receive MSB bit first value."]
-    Msb = 0x0,
-    #[doc = "Send and receive LSB bit first value."]
-    Lsb = 0x01,
-}
-impl Spilsb {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Spilsb {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Spilsb {
-    #[inline(always)]
-    fn from(val: u8) -> Spilsb {
-        Spilsb::from_bits(val)
-    }
-}
-impl From<Spilsb> for u8 {
-    #[inline(always)]
-    fn from(val: Spilsb) -> u8 {
-        Spilsb::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Spol {
-    #[doc = "The base value of the clock is 0. value."]
-    ClkBase0 = 0x0,
-    #[doc = "The base value of the clock is 1. value."]
-    ClkBase1 = 0x01,
-}
-impl Spol {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Spol {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Spol {
-    #[inline(always)]
-    fn from(val: u8) -> Spol {
-        Spol::from_bits(val)
-    }
-}
-impl From<Spol> for u8 {
-    #[inline(always)]
-    fn from(val: Spol) -> u8 {
-        Spol::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wtfcirq {
     #[doc = "MISO is used as the write mode flow control signal. value."]
     Miso = 0x0,
@@ -697,36 +491,5 @@ impl From<Wtfcirq> for u8 {
     #[inline(always)]
     fn from(val: Wtfcirq) -> u8 {
         Wtfcirq::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Wtfcpol {
-    #[doc = "Flow control signal high(1) creates flow control and byte transfers will stop until the flow control signal goes low. value."]
-    High = 0x0,
-    #[doc = "Flow control signal low(0) creates flow control and byte transfers will stop until the flow control signal goes high(1). value."]
-    Low = 0x01,
-}
-impl Wtfcpol {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Wtfcpol {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Wtfcpol {
-    #[inline(always)]
-    fn from(val: u8) -> Wtfcpol {
-        Wtfcpol::from_bits(val)
-    }
-}
-impl From<Wtfcpol> for u8 {
-    #[inline(always)]
-    fn from(val: Wtfcpol) -> u8 {
-        Wtfcpol::to_bits(val)
     }
 }

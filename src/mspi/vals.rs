@@ -435,37 +435,6 @@ impl From<Devcfg> for u8 {
 #[repr(u8)]
 #[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Dmadir {
-    #[doc = "Peripheral to Memory (SRAM) transaction value."]
-    P2m = 0x0,
-    #[doc = "Memory to Peripheral transaction value."]
-    M2p = 0x01,
-}
-impl Dmadir {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Dmadir {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Dmadir {
-    #[inline(always)]
-    fn from(val: u8) -> Dmadir {
-        Dmadir::from_bits(val)
-    }
-}
-impl From<Dmadir> for u8 {
-    #[inline(always)]
-    fn from(val: Dmadir) -> u8 {
-        Dmadir::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dmaen {
     #[doc = "Disable DMA Function value."]
     Dis = 0x0,
@@ -572,6 +541,37 @@ impl From<Iomsel> for u8 {
         Iomsel::to_bits(val)
     }
 }
+#[repr(u8)]
+#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
+pub enum Negedge {
+    #[doc = "RX data sampled on posedge of internal clock value."]
+    Normal = 0x0,
+    #[doc = "RX data sampled on negedge of internal clock value."]
+    Negedge = 0x01,
+}
+impl Negedge {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Negedge {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Negedge {
+    #[inline(always)]
+    fn from(val: u8) -> Negedge {
+        Negedge::from_bits(val)
+    }
+}
+impl From<Negedge> for u8 {
+    #[inline(always)]
+    fn from(val: Negedge) -> u8 {
+        Negedge::to_bits(val)
+    }
+}
 #[repr(transparent)]
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
 pub struct Outen(u16);
@@ -657,68 +657,6 @@ impl From<Rxcap> for u8 {
     #[inline(always)]
     fn from(val: Rxcap) -> u8 {
         Rxcap::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Rxneg {
-    #[doc = "RX data sampled on posedge of internal clock value."]
-    Normal = 0x0,
-    #[doc = "RX data sampled on negedge of internal clock value."]
-    Negedge = 0x01,
-}
-impl Rxneg {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Rxneg {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Rxneg {
-    #[inline(always)]
-    fn from(val: u8) -> Rxneg {
-        Rxneg::from_bits(val)
-    }
-}
-impl From<Rxneg> for u8 {
-    #[inline(always)]
-    fn from(val: Rxneg) -> u8 {
-        Rxneg::to_bits(val)
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum Txneg {
-    #[doc = "TX launched from posedge internal clock value."]
-    Normal = 0x0,
-    #[doc = "TX data launched from negedge of internal clock value."]
-    Negedge = 0x01,
-}
-impl Txneg {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> Txneg {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for Txneg {
-    #[inline(always)]
-    fn from(val: u8) -> Txneg {
-        Txneg::from_bits(val)
-    }
-}
-impl From<Txneg> for u8 {
-    #[inline(always)]
-    fn from(val: Txneg) -> u8 {
-        Txneg::to_bits(val)
     }
 }
 #[repr(u8)]
