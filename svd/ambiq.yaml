@@ -1,0 +1,7 @@
+# Chiptool transform pipeline for Ambiq SVDs (Apollo3; later Apollo4).
+transforms:
+  - !Sanitize
+  - !DeleteFieldsets
+      from: .*
+      useless: true
+  - !DeleteUselessEnums

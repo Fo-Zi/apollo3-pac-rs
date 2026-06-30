@@ -1,0 +1,22 @@
+[package]
+name = "apollo3-pac"
+version = "0.1.0"
+edition = "2021"
+description = "Peripheral access crate for the Ambiq Apollo3 Blue, generated from SVD via chiptool."
+license = "MIT"
+repository = "https://github.com/Fo-Zi/ambiq-support-rs"
+categories = ["embedded", "hardware-support", "no-std"]
+keywords = ["arm", "cortex-m", "apollo3", "ambiq", "pac"]
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = { version = "0.7", optional = true }
+defmt = { version = "0.3", optional = true }
+
+[features]
+rt = ["dep:cortex-m-rt", "cortex-m-rt/device"]
+defmt = ["dep:defmt"]
+
+# Only used by examples/. Keeps the library's downstream dep tree clean.
+[dev-dependencies]
+panic-halt = "1.0"
